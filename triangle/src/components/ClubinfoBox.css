@@ -1,0 +1,30 @@
+.ClubinfoBox_Container{
+    width: 50%;
+    height: 180px;
+    margin: auto;
+    border-radius: 15px;
+
+    background-color: rgb(240, 240, 240);
+
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+.InfoBox_Table{
+    width: 100%;
+    margin: 0 50px;
+}
+
+.Info_Label{
+    width: 100px;
+    height: 2em;
+    color: rgb(99, 99, 99);
+    font-weight: bold;
+}
+
+.Info_Value{
+    height: 2em;
+    color: black;
+    font-weight: bold;
+}
