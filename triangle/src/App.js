@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Button from './components/Button';
+import ClubNameBox from './components/ClubNameBox';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Button size="large">Click me</Button>} />
+        <Route path="/" element={<ClubNameBox/>} />
       </Routes>
     </BrowserRouter>
   );
