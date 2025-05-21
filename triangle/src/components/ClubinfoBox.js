@@ -1,5 +1,6 @@
 import React from "react";
 import '../components/ClubinfoBox.css';
+import '../index.css';
 
 const Clubinfo_Box = () =>{
     return(
