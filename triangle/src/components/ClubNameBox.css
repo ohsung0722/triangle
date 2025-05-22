@@ -1,6 +1,10 @@
 @font-face {
     font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-Bold.subset.woff2");
+    src: url("../assets/fonts/Pretendard-Bold.subset.woff2") format("woff2");;
+}
+
+html, body {
+    font-family: "Pretendard", sans-serif;
 }
 
 .ClubNameBox_Container{
@@ -14,6 +18,7 @@
 
 .ClubNameBox_Container:hover{
     background-color: #fafafa;
+    border : 2px solid rgba(0,0,0,.1);
 }
 
 .ClubNameBox_Container h1{
