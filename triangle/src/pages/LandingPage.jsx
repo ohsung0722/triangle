@@ -1,8 +1,71 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Dialog from '../components/Dialog';
 import Button from '../components/Button';
 import './LandingPage.css';
 
 const LandingPage = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [dialogContent, setDialogContent] = useState({
+    title: '',
+    content: ''
+  });
+
+  const handleFeatureClick = (feature) => {
+    const content = {
+      'easy-to-use': {
+        title: 'Easy to Use',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Our intuitive interface is designed with user experience in mind, making it easy for anyone to get started.
+            </p>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Simple and clean design</li>
+              <li>Intuitive navigation</li>
+              <li>Quick access to features</li>
+              <li>User-friendly controls</li>
+            </ul>
+          </div>
+        )
+      },
+      'powerful-tools': {
+        title: 'Powerful Tools',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Access a comprehensive suite of tools designed to enhance your learning experience.
+            </p>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Advanced search capabilities</li>
+              <li>Real-time collaboration features</li>
+              <li>Resource management tools</li>
+              <li>Customizable workspace</li>
+            </ul>
+          </div>
+        )
+      },
+      'support': {
+        title: '24/7 Support',
+        content: (
+          <div className="space-y-4">
+            <p>
+              Our dedicated support team is always ready to help you with any questions or issues.
+            </p>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Round-the-clock assistance</li>
+              <li>Quick response times</li>
+              <li>Expert guidance</li>
+              <li>Comprehensive help resources</li>
+            </ul>
+          </div>
+        )
+      }
+    };
+
+    setDialogContent(content[feature]);
+    setIsDialogOpen(true);
+  };
+
   return (
     <div className="landing-page">
       <header className="landing-header">
@@ -11,7 +74,6 @@ const LandingPage = () => {
       </header>
 
       <main className="landing-content">
-
         <section className="features-section">
           <h2>Our Features</h2>
           <div className="features-grid">
@@ -20,7 +82,7 @@ const LandingPage = () => {
               <p>Intuitive interface designed for the best user experience</p>
               <Button 
                 variant="secondary"
-                to="/features/easy-to-use"
+                onClick={() => handleFeatureClick('easy-to-use')}
               >
                 Learn More
               </Button>
@@ -30,7 +92,7 @@ const LandingPage = () => {
               <p>Access to advanced features and capabilities</p>
               <Button 
                 variant="secondary"
-                to="/features/powerful-tools"
+                onClick={() => handleFeatureClick('powerful-tools')}
               >
                 Learn More
               </Button>
@@ -40,7 +102,7 @@ const LandingPage = () => {
               <p>Round-the-clock assistance for all your needs</p>
               <Button 
                 variant="secondary"
-                to="/features/support"
+                onClick={() => handleFeatureClick('support')}
               >
                 Learn More
               </Button>
@@ -69,7 +131,7 @@ const LandingPage = () => {
               variant="outline"
               to="/about"
             >
-              Learn More
+              About
             </Button>
           </div>
           <div className="footer-section">
@@ -92,8 +154,16 @@ const LandingPage = () => {
           </div>
         </div>
       </footer>
+
+      <Dialog
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
+        title={dialogContent.title}
+      >
+        {dialogContent.content}
+      </Dialog>
     </div>
   );
 };
 
-export default LandingPage; 
+export default LandingPage;
