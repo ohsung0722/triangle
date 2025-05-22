@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import './UserLayout.css'
 
@@ -15,3 +15,5 @@ function UserLayout(){
         </>
     )
 }
+
+export {UserLayout}
