@@ -1,12 +1,10 @@
-import logo from './logo.svg';
+import {  RouterProvider } from 'react-router-dom';
 import './App.css';
-import TopNavbar from './components/TopNavbar';
+import router from './router';
 
 function App() {
   return (
-    <div>
-      <TopNavbar/>
-    </div>
+    <RouterProvider router={router}/>
   );
 }
 
