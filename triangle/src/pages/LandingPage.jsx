@@ -6,33 +6,11 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <header className="landing-header">
-        <h1>Welcome to Our Platform</h1>
-        <p className="subtitle">Discover amazing features and possibilities</p>
+        <h1>세모에 오신 것을 환영합니다</h1>
+        <p className="subtitle">당신에게 적합한 동아리를 찾아보세요</p>
       </header>
 
       <main className="landing-content">
-        <section className="hero-section">
-          <div className="hero-content">
-            <h2>Get Started Today</h2>
-            <p>Join our community and explore all the features we have to offer.</p>
-            <div className="button-group">
-              <Button 
-                size="large" 
-                variant="primary"
-                to="/signup"
-              >
-                Sign Up Now
-              </Button>
-              <Button 
-                size="large" 
-                variant="outline"
-                to="/learn-more"
-              >
-                Learn More
-              </Button>
-            </div>
-          </div>
-        </section>
 
         <section className="features-section">
           <h2>Our Features</h2>
@@ -71,8 +49,8 @@ const LandingPage = () => {
         </section>
 
         <section className="cta-section">
-          <h2>Ready to Get Started?</h2>
-          <p>Join thousands of satisfied users today</p>
+          <h2>지금 바로 시작하세요</h2>
+          <p>당신에게 적합한 동아리를 찾아보세요</p>
           <Button 
             size="large" 
             variant="primary"
@@ -98,18 +76,18 @@ const LandingPage = () => {
             <h4>Contact</h4>
             <Button 
               variant="outline"
-              to="/contact"
+              href="https://github.com/SejongOSS/triangle"
             >
-              Contact Us
+              Github
             </Button>
           </div>
           <div className="footer-section">
             <h4>Resources</h4>
             <Button 
               variant="outline"
-              href="https://ecampus.sejong.ac.kr/"
+              href="http://www.sejong.ac.kr/"
             >
-              Visit eCampus
+              Visit Sejong
             </Button>
           </div>
         </div>
