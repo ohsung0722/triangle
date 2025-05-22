@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Maximize2, MessageSquare, Minimize2, Send, X } from "lucide-react";
 import { MessageItem } from "./MessageItem";
 
-function ChatBot() {
+function ChatBot({highlight}) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [messages, setMessages] = useState([
@@ -83,8 +83,15 @@ function ChatBot() {
       <motion.div
         className="chat-toggle-button"
         initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+        animate={{ scale: highlight ? 1.2 : 1 }}
+        transition={highlight
+          ? {
+              duration: 0.5,
+              repeat: Infinity,
+              repeatType: "loop",
+              ease: "easeInOut",
+            }
+          : { type: "spring", stiffness: 260, damping: 20 }}
       >
         <button className="chat-button" onClick={toggleChat}>
           <MessageSquare size={24} />
@@ -92,6 +99,7 @@ function ChatBot() {
       </motion.div>
 
       <AnimatePresence>
+        
         {isOpen && (
           <motion.div
             className="chat-container-layout"

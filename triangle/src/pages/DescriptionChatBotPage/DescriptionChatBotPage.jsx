@@ -33,7 +33,7 @@ function DescriptionChatBotPage() {
 
   return (
     <div className="landing-page">
-      <ChatBot />
+      <ChatBot highlight={isDemoInView}/>
       <motion.section
         ref={targetRef}
         className="section hero-section"
