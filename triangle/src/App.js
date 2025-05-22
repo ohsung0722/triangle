@@ -1,14 +1,10 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import {  RouterProvider } from 'react-router-dom';
 import './App.css';
-import ClubCategoryBox from './components/ClubCategoryBox';
+import router from './router';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<ClubCategoryBox />} />
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router}/>
   );
 }
 
