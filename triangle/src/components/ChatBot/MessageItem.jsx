@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Bot, User } from "lucide-react";
-import './ChatBot.css'
+import "./ChatBot.css";
 
-function MessageItem({message}){
-    const isUser = message.sender === 'user'
+function MessageItem({ message }) {
+  const isUser = message.sender === "user";
 
-    return (
+  return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ function MessageItem({message}){
         </div>
       )}
     </motion.div>
-  )
+  );
 }
 
-export {MessageItem}
+export { MessageItem };
