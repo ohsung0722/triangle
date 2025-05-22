@@ -1,12 +1,10 @@
-import logo from './logo.svg';
+import {  RouterProvider } from 'react-router-dom';
 import './App.css';
-import Clubinfo_Box from './components/ClubinfoBox';
+import router from './router';
 
 function App() {
   return (
-    <div>
-      <Clubinfo_Box/>
-    </div>
+    <RouterProvider router={router}/>
   );
 }
 
