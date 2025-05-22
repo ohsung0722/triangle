@@ -1,84 +1,85 @@
 import React, { useEffect, useRef, useState } from "react";
-import './ChatBot.css'
+import "./ChatBot.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { Maximize2, MessageSquare, Minimize2, Send, X } from "lucide-react";
 import { MessageItem } from "./MessageItem";
 
-function ChatBot(){
-    const [isOpen, setIsOpen] = useState(false);
-    const [isMinimized, setIsMinimized] = useState(false);
-    const [messages, setMessages] = useState([
-        {
-            id: '1',
-            content: '안녕하세요! 무엇을 도와드릴까요?',
-            sender: 'bot',
-            timestamp: new Date()
-        }
-    ]);
-    const [input, setInput] = useState('');
-    const messagesEndRef = useRef(null);
+function ChatBot() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false);
+  const [messages, setMessages] = useState([
+    {
+      id: "1",
+      content: "안녕하세요! 무엇을 도와드릴까요?",
+      sender: "bot",
+      timestamp: new Date(),
+    },
+  ]);
+  const [input, setInput] = useState("");
+  const messagesEndRef = useRef(null);
 
-    const handleSendMessage = (e) => {
-        e.preventDefault()
-        if (!input.trim()) return
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+    if (!input.trim()) return;
 
-        const userMessage = {
-            id: Date.now().toString(),
-            content: input,
-            sender: "user",
-            timestamp: new Date(),
-        }
+    const userMessage = {
+      id: Date.now().toString(),
+      content: input,
+      sender: "user",
+      timestamp: new Date(),
+    };
 
-        setMessages((prev) => [...prev, userMessage])
-        setInput("")
+    setMessages((prev) => [...prev, userMessage]);
+    setInput("");
 
-        setTimeout(() => {
-            const botResponses = [
-            "도움이 필요하신가요?",
-            "더 자세히 설명해 주시겠어요?",
-            "알겠습니다. 다른 질문이 있으신가요?",
-            "그 부분에 대해 더 알려드릴게요.",
-            "네, 가능합니다. 어떻게 도와드릴까요?",
-        ]
+    setTimeout(() => {
+      const botResponses = [
+        "살 빼 라 서 상 혁",
+        "코 딩 해 라 서 상 혁",
+        "이은상 교수님 최고",
+        "리 액 트 공 부 좀 해 서 상 혁",
+        "공 부 해 라 서 상 혁",
+      ];
 
-        const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)]
+      const randomResponse =
+        botResponses[Math.floor(Math.random() * botResponses.length)];
 
-        const botMessage = {
-            id: (Date.now() + 1).toString(),
-            content: randomResponse,
-            sender: "bot",
-            timestamp: new Date(),
-        }
+      const botMessage = {
+        id: (Date.now() + 1).toString(),
+        content: randomResponse,
+        sender: "bot",
+        timestamp: new Date(),
+      };
 
-        setMessages((prev) => [...prev, botMessage])
-    }, 1000)
-  }
+      setMessages((prev) => [...prev, botMessage]);
+    }, 1000);
+  };
 
   const toggleChat = () => {
     if (isMinimized) {
-      setIsMinimized(false)
+      setIsMinimized(false);
     } else {
-      setIsOpen(!isOpen)
+      setIsOpen(!isOpen);
     }
-  }
+  };
 
   const minimizeChat = () => {
-    setIsMinimized(true)
-  }
+    setIsMinimized(true);
+  };
 
   const closeChat = () => {
-    setIsOpen(false)
-    setIsMinimized(false)
-  }
+    setIsOpen(false);
+    setIsMinimized(false);
+  };
 
-    useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({
-            behavior:'smooth'
-        })
-    }, [messages])
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [messages]);
 
-    return( 
-        <>
+  return (
+    <>
       <motion.div
         className="chat-toggle-button"
         initial={{ scale: 0 }}
@@ -114,7 +115,10 @@ function ChatBot(){
                 </div>
                 <div className="header-actions">
                   {isMinimized ? (
-                    <button className="icon-button" onClick={() => setIsMinimized(false)}>
+                    <button
+                      className="icon-button"
+                      onClick={() => setIsMinimized(false)}
+                    >
                       <Maximize2 size={16} />
                     </button>
                   ) : (
@@ -145,7 +149,10 @@ function ChatBot(){
                       <div ref={messagesEndRef} />
                     </div>
 
-                    <form onSubmit={handleSendMessage} className="input-container">
+                    <form
+                      onSubmit={handleSendMessage}
+                      className="input-container"
+                    >
                       <input
                         type="text"
                         value={input}
@@ -165,7 +172,7 @@ function ChatBot(){
         )}
       </AnimatePresence>
     </>
-    )
+  );
 }
 
-export {ChatBot}
+export { ChatBot };
