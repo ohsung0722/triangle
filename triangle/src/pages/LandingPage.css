@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Pretendard-Regular', sans-serif;
 }
 
 .landing-header {
@@ -14,11 +15,13 @@
 .landing-header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: 'Pretendard-Bold', sans-serif;
 }
 
 .subtitle {
   font-size: 1.25rem;
   opacity: 0.9;
+  font-family: 'Pretendard-Medium', sans-serif;
 }
 
 .landing-content {
@@ -64,6 +67,7 @@
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: #1e293b;
+  font-family: 'Pretendard-Bold', sans-serif;
 }
 
 .features-grid {
@@ -90,11 +94,13 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #1e293b;
+  font-family: 'Pretendard-SemiBold', sans-serif;
 }
 
 .feature-card p {
   color: #64748b;
   margin-bottom: 1.5rem;
+  font-family: 'Pretendard-Regular', sans-serif;
 }
 
 .cta-section {
@@ -107,12 +113,14 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #1e293b;
+  font-family: 'Pretendard-Bold', sans-serif;
 }
 
 .cta-section p {
   font-size: 1.25rem;
   color: #64748b;
   margin-bottom: 2rem;
+  font-family: 'Pretendard-Medium', sans-serif;
 }
 
 .landing-footer {
@@ -136,6 +144,7 @@
 .footer-section h4 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  font-family: 'Pretendard-SemiBold', sans-serif;
 }
 
 @media (max-width: 768px) {
