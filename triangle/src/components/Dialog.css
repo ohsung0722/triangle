@@ -62,14 +62,14 @@
 
 /* Animation */
 .dialog-overlay {
-  animation: fadeIn 0.2s ease-out;
+  animation: dialog_fadeIn 0.2s ease-out;
 }
 
 .dialog-content {
   animation: slideIn 0.2s ease-out;
 }
 
-@keyframes fadeIn {
+@keyframes dialog_fadeIn {
   from {
     opacity: 0;
   }
