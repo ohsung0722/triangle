@@ -1,0 +1,53 @@
+/* 전체 레이아웃 */
+#clubDetailTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* 이미지 스타일 */
+#clubImg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 오른쪽 텍스트 영역 */
+#clubTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 동아리명 */
+#clubTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+/* 분류/상세분류 라인 */
+#subtitle {
+  font-size: 14px;
+  color: #888;
+}
+
+/* 분류 (색 지정)*/
+#category {
+  color: #f06292;
+  font-weight: 500;
+}
+
+/* 가운데 선 */
+#midLine {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+/* 상세분류 (일반색) */
+#subcategory {
+  color: #555;
+}
