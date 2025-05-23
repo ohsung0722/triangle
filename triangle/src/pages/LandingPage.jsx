@@ -12,7 +12,7 @@ const LandingPage = () => {
 
   const handleFeatureClick = (feature) => {
     const content = {
-      'easy-to-use': {
+      '챗 봇': {
         title: 'Easy to Use',
         content: (
           <div className="space-y-4">
@@ -28,7 +28,7 @@ const LandingPage = () => {
           </div>
         )
       },
-      'powerful-tools': {
+      '검색 창': {
         title: 'Powerful Tools',
         content: (
           <div className="space-y-4">
@@ -44,7 +44,7 @@ const LandingPage = () => {
           </div>
         )
       },
-      'support': {
+      '즐겨찾기': {
         title: '24/7 Support',
         content: (
           <div className="space-y-4">
@@ -78,31 +78,31 @@ const LandingPage = () => {
           <h2>Our Features</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <h3>Easy to Use</h3>
-              <p>Intuitive interface designed for the best user experience</p>
+              <h3>챗 봇</h3>
+              <p>무엇이든 물어보세요</p>
               <Button 
                 variant="secondary"
-                onClick={() => handleFeatureClick('easy-to-use')}
+                onClick={() => handleFeatureClick('챗 봇')}
               >
                 Learn More
               </Button>
             </div>
             <div className="feature-card">
-              <h3>Powerful Tools</h3>
-              <p>Access to advanced features and capabilities</p>
+              <h3>검색 창</h3>
+              <p>원하는 동아리를 바로 확인할 수 있어요</p>
               <Button 
                 variant="secondary"
-                onClick={() => handleFeatureClick('powerful-tools')}
+                onClick={() => handleFeatureClick('검색 창')}
               >
                 Learn More
               </Button>
             </div>
             <div className="feature-card">
-              <h3>24/7 Support</h3>
-              <p>Round-the-clock assistance for all your needs</p>
+              <h3>즐겨찾기</h3>
+              <p>원하는 동아리를 손쉽게 추가할 수 있어요</p>
               <Button 
                 variant="secondary"
-                onClick={() => handleFeatureClick('support')}
+                onClick={() => handleFeatureClick('즐겨찾기')}
               >
                 Learn More
               </Button>
@@ -140,7 +140,7 @@ const LandingPage = () => {
               variant="outline"
               href="https://github.com/SejongOSS/triangle"
             >
-              Github
+              Github Page
             </Button>
           </div>
           <div className="footer-section">
@@ -149,7 +149,7 @@ const LandingPage = () => {
               variant="outline"
               href="http://www.sejong.ac.kr/"
             >
-              Visit Sejong
+              Sejong Page
             </Button>
           </div>
         </div>
