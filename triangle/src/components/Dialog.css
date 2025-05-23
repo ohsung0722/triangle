@@ -66,7 +66,7 @@
 }
 
 .dialog-content {
-  animation: slideIn 0.2s ease-out;
+  animation: dialog_slideIn 0.2s ease-out;
 }
 
 @keyframes dialog_fadeIn {
@@ -78,7 +78,7 @@
   }
 }
 
-@keyframes slideIn {
+@keyframes dialog_slideIn {
   from {
     transform: translateY(-20px);
     opacity: 0;
