@@ -1,14 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Button from './components/Button';
+import ClubDetailTitle from './components/clubDetailTitle/clubDetailTitle';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Button size="large">Click me</Button>} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <ClubDetailTitle/>
+    </div>
   );
 }
 
