@@ -1,12 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import ClubDetailTitle from './components/clubDetailTitle/clubDetailTitle';
+import {  RouterProvider } from 'react-router-dom';
+import router from './router';
 
 function App() {
   return (
-    <div>
-      <ClubDetailTitle/>
-    </div>
+    <RouterProvider router={router}/>
   );
 }
 
