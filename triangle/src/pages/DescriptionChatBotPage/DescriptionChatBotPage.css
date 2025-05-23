@@ -1,4 +1,3 @@
-/* 랜딩 페이지 스타일 */
 .landing-page {
   width: 100%;
   overflow-x: hidden;
@@ -26,6 +25,7 @@
   z-index: 10;
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 7rem;
 }
 
 .hero-title {
@@ -33,6 +33,7 @@
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.1;
+  font-family: 'Pretendard-Bold';
 }
 
 .hero-subtitle {
@@ -42,6 +43,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Pretendard-Regular';
 }
 
 .hero-button {
@@ -55,6 +57,7 @@
   font-size: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Pretendard-Regular';
 }
 
 .hero-button:hover {
@@ -128,8 +131,9 @@
 }
 
 .cta-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
+  font-family: 'Pretendard-Bold';
   margin-bottom: 1rem;
 }
 
@@ -137,6 +141,7 @@
   font-size: 1.125rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+  font-family: 'Pretendard-Regular';
 }
 
 .cta-button {
@@ -150,6 +155,7 @@
   font-size: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Pretendard-Regular';
 }
 
 .cta-button:hover {

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import './SectionTitle.css'
 
 function SectionTitle({title, subtitle, center = true}){
     return(

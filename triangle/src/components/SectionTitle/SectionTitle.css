@@ -3,6 +3,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: #111827;
+  font-family: 'Pretendard-Bold';
 }
 
 .section-subtitle {
@@ -10,6 +11,7 @@
   color: #6b7280;
   max-width: 600px;
   margin: 0 auto 3rem auto;
+  font-family: 'Pretendard-Semibold';
 }
 
 .text-centered{

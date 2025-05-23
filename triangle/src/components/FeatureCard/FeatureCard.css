@@ -31,10 +31,12 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  font-family: 'Pretendard-Semibold';
   color: #111827;
 }
 
 .feature-description {
   color: #6b7280;
   line-height: 1.5;
+  font-family: 'Pretendard-Regular';
 }
