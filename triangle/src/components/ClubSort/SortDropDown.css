@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Pretendard";
+    src: url("../../assets/fonts/Pretendard-Bold.subset.woff2") format("woff2");;
+}
+
+html, body {
+    font-family: "Pretendard", sans-serif;
+}
+
+
+.sort-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-button {
+  margin-left: auto;
+  font-size: 17px;
+  color: rgba(0, 0, 0, .6);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sort-button.active {
+  color: #3B82F6; 
+}
+
+.sort-menu {
+  position: absolute;
+  right: 0;
+  margin-top: 6px;
+  width: 170px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.sort-item {
+  display: block;
+  width: 90%;
+  margin: 7px;
+  padding: 10px;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, .6);
+  cursor: pointer;
+}
+
+.sort-item.selected {
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  color: black;
+}
