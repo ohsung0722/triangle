@@ -1,14 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
+import {  RouterProvider } from 'react-router-dom';
+import router from './router';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-      </Routes>
-    </Router>
+    <RouterProvider router={router}/>
   );
 }
 
