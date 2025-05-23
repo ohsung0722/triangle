@@ -5,13 +5,14 @@ import { TestPage } from "./pages/TestPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { DescriptionChatBotPage } from "./pages/DescriptionChatBotPage/DescriptionChatBotPage";
 import { DescriptionLayout } from "./layouts/DescriptionLayout/DescriptionLayout";
+import LandingPage from "./pages/LandingPage";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <UserLayout/>,
         children: [
-            {index: true, element: <TestPage/>},
+            {index: true, element: <LandingPage/>},
             {path: '*', element: <NotFoundPage/>},
             {path: 'main', element: <TestPage/>},
             {path: 'detail', element: <TestPage/>},
