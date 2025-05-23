@@ -1,19 +1,10 @@
-@font-face {
-    font-family: "Pretendard";
-    src: url("../../assets/fonts/Pretendard-Bold.subset.woff2") format("woff2");;
-}
-
-html, body {
-    font-family: "Pretendard", sans-serif;
-}
-
-
 .sort-dropdown {
   position: relative;
   display: inline-block;
 }
 
 .sort-button {
+  font-family: "Pretendard0Bold", sans-serif;
   margin-left: auto;
   font-size: 17px;
   color: rgba(0, 0, 0, .6);
