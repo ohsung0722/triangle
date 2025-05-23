@@ -5,7 +5,7 @@ import { TestPage } from "./pages/TestPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { DescriptionChatBotPage } from "./pages/DescriptionChatBotPage/DescriptionChatBotPage";
 import { DescriptionLayout } from "./layouts/DescriptionLayout/DescriptionLayout";
-import LandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
 const router = createBrowserRouter([
     {
