@@ -1,0 +1,926 @@
+[
+  {
+    "id": 1,
+    "name": "늘혬코러스",
+    "category": "공연분과",
+    "area": "밴드",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 510호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "1988년 시작된 세종대 최초의 중앙 밴드동아리. 다양한 장르의 공연과 정기공연 4회, 선배와의 친목 행사도 진행. '늘혬가'라는 자체 노래 있음."
+    }
+  },
+  {
+    "id": 2,
+    "name": "The Black",
+    "category": "공연분과",
+    "area": "보컬",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 620호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "2006년 설립된 보컬 동아리. R&B, 재즈, 발라드 등 화음을 기반으로 한 듀엣/단체 공연이 주를 이룸. 정기공연, 버스킹 등 활발한 공연 활동."
+    }
+  },
+  {
+    "id": 3,
+    "name": "Sound Plus",
+    "category": "공연분과",
+    "area": "음악",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 B208호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "ROCK, 민중가요 중심. 정기공연을 진행하는 음악 동아리."
+    }
+  },
+  {
+    "id": 4,
+    "name": "Soul Train",
+    "category": "공연분과",
+    "area": "흑인 음악",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 B201호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "랩, 보컬, 디제이, 프로듀싱 스터디 및 공연 활동 중심. 소울커넥션 언더크루와 교류. 정기공연, 초청공연 등 다수 무대 참여."
+    }
+  },
+  {
+    "id": 5,
+    "name": "세종극예술연구회",
+    "category": "공연분과",
+    "area": "연극",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 526호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "1979년 창립. 순수 예술 연극 동아리. 전국대학연극제 등에서 다수 수상, 선후배 간 정이 두터운 동아리."
+    }
+  },
+  {
+    "id": 6,
+    "name": "Intro",
+    "category": "공연분과",
+    "area": "랩,댄스",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 B209호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "랩과 다양한 댄스 장르를 다루는 유일 중앙동아리. 커버댄스부터 창작 안무까지 활동."
+    }
+  },
+  {
+    "id": 7,
+    "name": "터벌림",
+    "category": "공연분과",
+    "area": "풍물",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 621호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "1984년 창립. 유일한 풍물패. 판굿 전수, 정기공연, 버스킹 등 활동."
+    }
+  },
+  {
+    "id": 8,
+    "name": "Page7",
+    "category": "공연분과",
+    "area": "밴드",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 605호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "합주와 레슨을 통해 어쿠스틱, 발라드, 모던락 등 다양한 음악 활동."
+    }
+  },
+  {
+    "id": 9,
+    "name": "한울림",
+    "category": "공연분과",
+    "area": "클래식 기타",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 514호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "클래식 기타 연구 및 보급, 공연 활동 중심."
+    }
+  },
+  {
+    "id": 10,
+    "name": "수염부",
+    "category": "공연분과",
+    "area": "흑인음악",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "호텔관광외식경영학부 소속 흑인음악 소모임. 대동제와 연말 공연, 세대 간 파티 등으로 활발히 활동하며 선후배 간의 유대감을 유지."
+    }
+  },
+  {
+    "id": 11,
+    "name": "Nine siX",
+    "category": "공연분과",
+    "area": "댄스",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "자연과학대학, 생명과학대학, 인공지능융합대학 연합 소모임. 다양한 무대 공연과 연합 활동 중심으로 운영됨."
+    }
+  },
+  {
+    "id": 12,
+    "name": "FILD",
+    "category": "공연분과",
+    "area": "댄스",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "호텔관광외식경영학부 소속 댄스 소모임. OT공연, 대동제, 정기공연 및 소풍, MT 등 단합 중심의 활동 진행."
+    }
+  },
+  {
+    "id": 13,
+    "name": "무붕",
+    "category": "공연분과",
+    "area": "밴드",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "2001년 창설된 인융대 소속 밴드 소모임. 락 음악과 라이브 중심의 공연 활동 및 정기 클럽 공연을 진행."
+    }
+  },
+  {
+    "id": 14,
+    "name": "Rush",
+    "category": "체육분과",
+    "area": "농구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 516호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "농구 연습과 시합 중심의 체육 중앙동아리."
+    }
+  },
+  {
+    "id": 15,
+    "name": "발파람",
+    "category": "체육분과",
+    "area": "택견",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 503호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "2004년 승인된 택견 동아리. 단계적 수련과 광진구 택견 전수관 협력 수련 가능."
+    }
+  },
+  {
+    "id": 16,
+    "name": "S.T.C",
+    "category": "체육분과",
+    "area": "테니스",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 508호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "멘토제 기반 자체 트레이닝과 교류전 및 대회 참가 중심의 테니스 동아리."
+    }
+  },
+  {
+    "id": 17,
+    "name": "요트부",
+    "category": "체육분과",
+    "area": "요트",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 528호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "1975년 시작된 요트 동아리. 하버 및 바다에서 세일링 활동 진행."
+    }
+  },
+  {
+    "id": 18,
+    "name": "세종킹스",
+    "category": "체육분과",
+    "area": "야구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 519호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "야구 정기 연습과 리그 참가, 졸업생과 교류전 중심. 다양한 대회 성과 보유."
+    }
+  },
+  {
+    "id": 19,
+    "name": "Jump",
+    "category": "체육분과",
+    "area": "스노우보드",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 604호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "KUSBF 소속 스노우보드 동아리. 보드 중심 다양한 스포츠 활동 병행."
+    }
+  },
+  {
+    "id": 20,
+    "name": "TSP",
+    "category": "체육분과",
+    "area": "탁구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 511호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "탁구 중심의 동아리. YB 단체전 등 다양한 대회 수상 실적 보유."
+    }
+  },
+  {
+    "id": 21,
+    "name": "산악부",
+    "category": "체육분과",
+    "area": "산악",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "등산과 등반을 통한 체력과 정신력 향상을 목표로 하는 산악 동아리."
+    }
+  },
+  {
+    "id": 22,
+    "name": "세종스키",
+    "category": "체육분과",
+    "area": "스키",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "대학스키연맹 소속. 겨울 합숙, 대회 및 무료 강습 제공."
+    }
+  },
+  {
+    "id": 23,
+    "name": "ESCAPER",
+    "category": "체육분과",
+    "area": "주짓수",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "호신 및 신체 단련을 목표로 다양한 주짓수 기술을 배우고 공유함."
+    }
+  },
+  {
+    "id": 24,
+    "name": "FC해례본",
+    "category": "체육분과",
+    "area": "풋살, 축구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "과, 학번 관계 없이 풋살과 축구를 함께 즐기며 친목 도모하는 풋살 동아리."
+    }
+  },
+  {
+    "id": 25,
+    "name": "하파스톤",
+    "category": "체육분과",
+    "area": "축구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "호텔관광대학 소속 축구 소모임. 고학번과 졸업생도 함께 활동하는 것이 특징."
+    }
+  },
+  {
+    "id": 26,
+    "name": "S.E.L.S",
+    "category": "봉사분과",
+    "area": "영어 봉사",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 504호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "국제어학원과 성동 청소년수련관 협력 'English Day' 프로그램에서 시작된 동아리로, 초등학생 영어 자원봉사 활동 수행."
+    }
+  },
+  {
+    "id": 27,
+    "name": "죽순회",
+    "category": "봉사분과",
+    "area": "봉사",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 532호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "1965년 설립된 전통 봉사 동아리. 서울영아일시보호소 봉사 및 건국대와 교류 활동 중점."
+    }
+  },
+  {
+    "id": 28,
+    "name": "로타랙트",
+    "category": "봉사분과",
+    "area": "봉사",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 511호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "공부방 운영, 소외계층 반찬 배달 등 주기적인 봉사 활동 수행."
+    }
+  },
+  {
+    "id": 29,
+    "name": "LOHOS",
+    "category": "봉사분과",
+    "area": "건축봉사",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "건축공학과 소속. '사랑의 집짓기'를 통해 사회적 소외 계층을 위한 건축 봉사활동 수행."
+    }
+  },
+  {
+    "id": 30,
+    "name": "늘품e",
+    "category": "봉사분과",
+    "area": "경제 봉사",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "경제학과 소속. 아동센터 경제 교육 및 이콘일보 제작 등 경제교육 봉사활동 수행."
+    }
+  },
+  {
+    "id": 31,
+    "name": "마스터",
+    "category": "문화분과",
+    "area": "보드게임",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 603호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "과거 콘솔게임 동아리에서 보드게임 중심으로 전환된 문화 동아리."
+    }
+  },
+  {
+    "id": 32,
+    "name": "유스호스텔",
+    "category": "문화분과",
+    "area": "여행",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 509호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "1967년부터 운영된 연합 여행 동아리. 여러 대학과 함께 여행하며 추억을 쌓음."
+    }
+  },
+  {
+    "id": 33,
+    "name": "한손",
+    "category": "문화분과",
+    "area": "만화",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 522호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "만화 동아리로 내부 상영회 및 매년 회지 발간 활동."
+    }
+  },
+  {
+    "id": 34,
+    "name": "MIS",
+    "category": "문화분과",
+    "area": "대중문화 연구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 602호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "비전캠프, 청년아카데미 등 사회참여 활동을 병행하는 대중문화 연구 동아리."
+    }
+  },
+  {
+    "id": 35,
+    "name": "두바퀴",
+    "category": "문화분과",
+    "area": "이륜차",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 624호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "이륜차를 활용한 여행과 캠핑 중심 활동. 서울 근교 및 외곽 지역 탐방."
+    }
+  },
+  {
+    "id": 36,
+    "name": "밤부",
+    "category": "문화분과",
+    "area": "사진",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 507호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "다양한 카메라 장비를 사용한 사진 활동. 정기 전시회와 엽서 판매도 진행."
+    }
+  },
+  {
+    "id": 37,
+    "name": "세종문학회",
+    "category": "문화분과",
+    "area": "문화",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 607호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "영화감상, 이야기, 타학교 교류 등 문화 소통 중심의 활동."
+    }
+  },
+  {
+    "id": 38,
+    "name": "세종서회",
+    "category": "문화분과",
+    "area": "서예",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 512호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "서예 동아리. 매 학기 서예 전시회를 개최함."
+    }
+  },
+  {
+    "id": 39,
+    "name": "Being",
+    "category": "문화분과",
+    "area": "칵테일 실습",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "호텔관광대학 소속 소모임. 칵테일, 담금주, 블라인드 대회 등 실습 중심."
+    }
+  },
+  {
+    "id": 40,
+    "name": "En#",
+    "category": "학술분과",
+    "area": "IT",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 530호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "노용덕 교수 지도, 이매진컵 등 대회에 참가하는 IT 동아리."
+    }
+  },
+  {
+    "id": 41,
+    "name": "SSG",
+    "category": "학술분과",
+    "area": "정보보안",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "율 605호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "학내 서버 관리 및 Incognito 연합 활동 참여. 졸업생 세미나와 실전 중심 활동 진행."
+    }
+  },
+  {
+    "id": 42,
+    "name": "InterFace",
+    "category": "학술분과",
+    "area": "프로그래밍",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 518호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "1989년 설립된 개발 중심의 프로그래밍 동아리. 전시회 및 게임 대회 진행."
+    }
+  },
+  {
+    "id": 43,
+    "name": "아롬",
+    "category": "학술분과",
+    "area": "개발, 기획, 디자인",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 622호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "다양한 파트로 나뉘어 개발 프로젝트를 학습하고 완성하는 목표의 종합 동아리."
+    }
+  },
+  {
+    "id": 44,
+    "name": "SAI",
+    "category": "학술분과",
+    "area": "인공지능 연구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "AI에 관심 있는 학생 누구나 참여 가능. 스터디부터 페이퍼 리뷰까지 다양한 레벨 운영."
+    }
+  },
+  {
+    "id": 45,
+    "name": "별무리",
+    "category": "학술분과",
+    "area": "천문학",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 524호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "별 관측과 세미나 중심의 천문학 동아리. 지부 간 연합 MT 활동도 활발."
+    }
+  },
+  {
+    "id": 46,
+    "name": "UNSA",
+    "category": "학술분과",
+    "area": "학생활동",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "UN 관련 다양한 봉사 및 국제 교류 활동 참여. 전국 연합 조직."
+    }
+  },
+  {
+    "id": 47,
+    "name": "세종투자연구회",
+    "category": "학술분과",
+    "area": "금융투자",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 529호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "모의투자대회 및 실제 자산운용을 통해 금융지식과 실무를 학습."
+    }
+  },
+  {
+    "id": 48,
+    "name": "유마프랜",
+    "category": "학술분과",
+    "area": "마케팅",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 606호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "경영학부 중심 마케팅 연구 동아리. 케이스 스터디와 토론, 발표 중심."
+    }
+  },
+  {
+    "id": 49,
+    "name": "G:LOW",
+    "category": "학술분과",
+    "area": "국제교류",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "세종관 305호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "인문과학대 소속 국제교류 소모임. 외국인과의 세미나, 문화체험, 공모전 등 다양한 활동."
+    }
+  },
+  {
+    "id": 50,
+    "name": "Divtag",
+    "category": "학술분과",
+    "area": "컴퓨터 연구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "컴퓨터공학과 소속 소모임. 보안 취약점 제보 등 실무 중심 개발 및 연구 수행."
+    }
+  },
+  {
+    "id": 51,
+    "name": "판도라큐브",
+    "category": "학술분과",
+    "area": "게임제작",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "세종관 318호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "게임 개발 소모임. 프로그래밍, 기획, 아트 팀으로 나뉘어 게임 제작을 경험."
+    }
+  },
+  {
+    "id": 52,
+    "name": "SMARCLE",
+    "category": "학술분과",
+    "area": "인공지능 연구",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "AI로봇학과 소속. 인공지능을 주제로 다양한 프로젝트와 세미나를 운영."
+    }
+  },
+  {
+    "id": 53,
+    "name": "AUTORY",
+    "category": "학술분과",
+    "area": "자동차제작",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "기계공학과 소속 자작자동차 소모임. 대회 수상 경력 다수."
+    }
+  },
+  {
+    "id": 54,
+    "name": "s.U.A.V",
+    "category": "학술분과",
+    "area": "무인항공기",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "다산관 209B",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "우주항공공학 소속. 드론 및 고정익 항공기 제작 및 대회 참가."
+    }
+  },
+  {
+    "id": 55,
+    "name": "R.W.T.A",
+    "category": "학술분과",
+    "area": "건축설계",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "건축학과 소속. 설계 공모전 및 스튜디오 토론 중심 활동."
+    }
+  },
+  {
+    "id": 56,
+    "name": "마중물",
+    "category": "학술분과",
+    "area": "나노신소재",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "나노신소재공학과 소속. 실험, 공모전 참여 및 지역 아동 교육 봉사 병행."
+    }
+  },
+  {
+    "id": 57,
+    "name": "라이팅게일",
+    "category": "학술분과",
+    "area": "조명",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "건축학과 소속 조명 소모임. 조명 전시회 및 탐사 중심 활동."
+    }
+  },
+  {
+    "id": 58,
+    "name": "호텔연구반",
+    "category": "학술분과",
+    "area": "호텔",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "호텔관광외식경영학부 소속. 수업 및 현업 관련 활동 병행."
+    }
+  },
+  {
+    "id": 59,
+    "name": "외식산업연구반",
+    "category": "학술분과",
+    "area": "외식업",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "외식업 탐방 및 와인 테이스팅 등 외식산업 관련 연구 활동 중심."
+    }
+  },
+  {
+    "id": 60,
+    "name": "관광연구반",
+    "category": "학술분과",
+    "area": "관광업",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "소모임",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "호텔관광외식경영학부 소속. 관광산업과 관련된 다양한 학술 활동 수행."
+    }
+  },
+  {
+    "id": 61,
+    "name": "레지나",
+    "category": "종교분과",
+    "area": "가톨릭",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 520호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "가톨릭 중심의 중앙동아리로 성경공부와 봉사활동을 병행."
+    }
+  },
+  {
+    "id": 62,
+    "name": "IVF",
+    "category": "종교분과",
+    "area": "개신교",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 523호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "초교파 복음주의 개신교 동아리. 6대 핵심가치를 중심으로 다양한 사역 활동 진행."
+    }
+  },
+  {
+    "id": 63,
+    "name": "CAM",
+    "category": "종교분과",
+    "area": "개신교",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 622호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "여의도순복음교회 소속 대학선교회. 기도와 성경공부, 복음화 훈련 중심."
+    }
+  },
+  {
+    "id": 64,
+    "name": "CCC",
+    "category": "종교분과",
+    "area": "개신교",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 623호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "한국대학생선교회 소속. 개신교 신앙 전파 및 육성 중심의 활동."
+    }
+  },
+  {
+    "id": 65,
+    "name": "JYM",
+    "category": "종교분과",
+    "area": "개신교",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 517호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "복음주의 성격의 선교단체. 공동체 생활과 전도, 성경공부 중심."
+    }
+  },
+  {
+    "id": 66,
+    "name": "KSGI",
+    "category": "종교분과",
+    "area": "창가학회",
+    "detail": {
+      "leader": "개인정보",
+      "phone": "개인정보",
+      "location": "학 501호",
+      "date": "알수없음",
+      "meeting": "알수없음",
+      "description": "창가학회 관련 종교 동아리로 학내 종교 활동 수행."
+    }
+  }
+]

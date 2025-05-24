@@ -2,12 +2,18 @@ import React , { useState } from "react";
 import './SearchBox.css';
 import searchIcon from '../assets/images/search_icon.svg';
 
-const SearchBox=()=>{
+const SearchBox=({onSearch})=>{
     const [searchValue, setSearchValue] = useState('');
 
     const handleSearchChange = (e) => {
         setSearchValue(e.target.value);
     };
+
+    const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      onSearch(searchValue);
+    }
+  };
 
     return(
         <div className="SearchBox_input">
@@ -15,6 +21,7 @@ const SearchBox=()=>{
                 type="search"
                 placeholder="검색"
                 onChange={handleSearchChange}
+                onKeyDown={handleKeyDown}
             />
             <img
                 src={searchIcon}
