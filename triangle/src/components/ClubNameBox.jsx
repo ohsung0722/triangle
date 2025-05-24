@@ -16,7 +16,7 @@ const ClubNameBox = ({name, type, detail}) =>{
     }
 
     const handleClick = () =>{
-        console.log('click');
+        
     }
 
     const getCategoryColor = (type) => {
