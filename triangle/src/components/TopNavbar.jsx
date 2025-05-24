@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../components/TopNavbar.css';
+import './TopNavbar.css';
 import logo from '../assets/images/triangle_logo.png';
 
-const Top_Navbar = () =>{
-
-
+const TopNavbar = () =>{
     return(
         <div className="TopNavBar_Container">
-            <div className="TopNavBar_Logo_container">
+            <div className="TopNavBar_Logo_Container">
                 <Link to="/main">
                     <img
                         src={logo}
@@ -21,4 +19,4 @@ const Top_Navbar = () =>{
     );
 }
 
-export default Top_Navbar;
+export default TopNavbar;

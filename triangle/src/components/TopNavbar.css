@@ -8,7 +8,7 @@
     
 }
 
-.TopNavBar_Logo_container{
+.TopNavBar_Logo_Container{
     margin: 0 auto;
     position: relative;
     width: 1120px;
@@ -16,7 +16,6 @@
     flex-direction: column;
     pointer-events: none;
 }
-
 
 .TopNavBar_Logo{
     max-height: 80px; 
@@ -27,5 +26,5 @@
 }
 
 .TopNavBar_Logo_container img {
-  pointer-events: auto;
+    pointer-events: auto;
 }

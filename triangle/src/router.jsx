@@ -7,6 +7,7 @@ import { DescriptionChatBotPage } from "./pages/DescriptionChatBotPage/Descripti
 import { DescriptionLayout } from "./layouts/DescriptionLayout/DescriptionLayout";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import MainPage from "./pages/MainPage/MainPage";
+import { ClubInfo } from "./pages/ClubInfo/ClubInfo";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
             {index: true, element: <LandingPage/>},
             {path: '*', element: <NotFoundPage/>},
             {path: 'main', element: <MainPage/>},
+            {path: 'club/:id', element: <ClubInfo/> },
             {path: 'detail', element: <TestPage/>},
          
         ]
