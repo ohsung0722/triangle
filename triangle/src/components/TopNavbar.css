@@ -5,12 +5,21 @@
     border-bottom: 1px solid rgba(0,0,0,.1);
     background-color: white;
     z-index: 1000;
+    
+}
+
+.TopNavBar_Logo_container{
+    margin: 0 auto;
+    position: relative;
+    width: 1120px;
+    display: flex;
+    flex-direction: column;
 }
 
 .TopNavBar_Logo{
     max-height: 80px; 
     object-fit: contain; 
     display: block;
-    margin-left: 120px;
     cursor: pointer;
+    margin-left: 10px;
 }

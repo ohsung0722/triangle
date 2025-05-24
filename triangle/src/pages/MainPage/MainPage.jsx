@@ -9,6 +9,7 @@ import ClubNameBox from "../../components/ClubNameBox";
 const MainPage = ()=>{
     const [selectedCategories, setSelectedCategories] = useState(["전체"]);
     const [sortType, setSortType] = useState('name');
+    const [searchTerm, setSearchTerm] = useState('');
 
     const handleCategoryChange = (categories) => {
         setSelectedCategories(categories);
@@ -17,10 +18,14 @@ const MainPage = ()=>{
     const handleSort = sort => {
         setSortType(sort);
     };
+    const handleSearch = (term) => {
+        setSearchTerm(term);
+    };
 
     const filtered = ClubData.filter(club => {
-        if (selectedCategories.includes("전체")) return true;
-        return selectedCategories.includes(club.category);
+        const inCategory = selectedCategories.includes("전체") || selectedCategories.includes(club.category);
+        const matchesSearch = club.name.toLowerCase().includes(searchTerm.trim().toLowerCase());
+        return inCategory && (searchTerm.trim() === '' || matchesSearch);
     });
 
     const sortedClubs = [...filtered].sort((a, b) => {
@@ -36,7 +41,7 @@ const MainPage = ()=>{
 
     return(
         <div className="MainPage_container">
-            <SearchBox />
+            <SearchBox onSearch={handleSearch}/>
             <ClubCountAndAlignBox count={sortedClubs.length} handleSort={handleSort}/>
             <ClubCategoryBox onChange={handleCategoryChange}/>
             <div className="MainPage_ClubList">
