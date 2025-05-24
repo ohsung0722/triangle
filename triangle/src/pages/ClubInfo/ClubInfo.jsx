@@ -22,35 +22,35 @@ const ClubInfo = () => {
   }
 
   return (
-    <div className="clubInfoContainer">
+    <div className="ClubInfo_clubInfoContainer">
 
-      <div className="Section">
-        <div className="section1">
+      <div className="ClubInfo_Section">
+        <div className="ClubInfo_section1">
           <ClubDetailTitle
             club={club}
           />
         </div>
 
-        <div className="section2">
-          <div className="BoxSection">
+        <div className="ClubInfo_section2">
+          <div className="ClubInfo_BoxSection">
             <ClubinfoBox club={club} />
           </div>
-          <div className="ButtonSection">
+          <div className="ClubInfo_ButtonSection">
             <Button size="large" variant="secondary" onClick={() => alert("모집이 마감되었습니다.")}>모집마감</Button>
           </div>
         </div>
 
-        <div className="section3">
-          <div className="clubIntro">동아리 소개</div>
-          <div className="TextSection">
-            <div className="TextStart">동아리를 소개합니다.</div>
-            <div className="clubImage">
+        <div className="ClubInfo_section3">
+          <div className="ClubInfo_clubIntro">동아리 소개</div>
+          <div className="ClubInfo_TextSection">
+            <div className="ClubInfo_TextStart">동아리를 소개합니다.</div>
+            <div className="ClubInfo_clubImage">
               <img
                 src={clubImage}
                 alt="동아리사진"
             />
             </div>
-            <div className="TextDetail">{club.detail.description}</div>
+            <div className="ClubInfo_TextDetail">{club.detail.description}</div>
           </div>
         </div>
       </div>
