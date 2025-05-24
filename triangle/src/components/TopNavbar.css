@@ -3,12 +3,29 @@
     width: 100%;
     height: 80px;
     border-bottom: 1px solid rgba(0,0,0,.1);
+    background-color: white;
+    z-index: 1000;
+    
 }
+
+.TopNavBar_Logo_container{
+    margin: 0 auto;
+    position: relative;
+    width: 1120px;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
 
 .TopNavBar_Logo{
     max-height: 80px; 
     object-fit: contain; 
     display: block;
-    margin-left: 120px;
     cursor: pointer;
+    margin-left: 10px;
+}
+
+.TopNavBar_Logo_container img {
+  pointer-events: auto;
 }

@@ -2,11 +2,7 @@ import React from "react";
 import './ClubCountAndAlignBox.css';
 import SortDropdown from "../ClubSort/SortDropDown"
 
-const ClubCountAndAlignBox = ({count})=>{
-
-    const handleSort = key => {
-    console.log(key);
-  };
+const ClubCountAndAlignBox = ({count,handleSort})=>{
 
     return(
         <div className="ClubCountAndAlignBox_container">
