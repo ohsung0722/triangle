@@ -1,9 +1,9 @@
-.landing-page {
+.description-landing-page {
   width: 100%;
   overflow-x: hidden;
 }
 
-.section {
+.description-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.hero-section {
+.description-hero-section {
   background: linear-gradient(135deg, #9333ea 0%, #6366f1 100%);
   color: white;
   text-align: center;
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.hero-content {
+.description-hero-content {
   position: relative;
   z-index: 10;
   max-width: 800px;
@@ -28,7 +28,7 @@
   margin-bottom: 7rem;
 }
 
-.hero-title {
+.description-hero-title {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -36,7 +36,7 @@
   font-family: 'Pretendard-Bold';
 }
 
-.hero-subtitle {
+.description-hero-subtitle {
   font-size: 1.25rem;
   margin-bottom: 2rem;
   opacity: 0.9;
@@ -46,7 +46,7 @@
   font-family: 'Pretendard-Regular';
 }
 
-.hero-button {
+.description-hero-button {
   background-color: white;
   color: #9333ea;
   font-weight: 600;
@@ -60,18 +60,18 @@
   font-family: 'Pretendard-Regular';
 }
 
-.hero-button:hover {
+.description-hero-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.features-section {
+.description-features-section {
   background-color: #f9fafb;
   text-align: center;
 }
 
 
-.features-grid {
+.description-features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -79,7 +79,7 @@
   margin: 0 auto;
 }
 
-.demo-section {
+.description-demo-section {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@
   text-align: center;
 }
 
-.demo-container {
+.description-demo-container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -96,7 +96,7 @@
   align-items: center;
 }
 
-.demo-image {
+.description-demo-image {
   width: 100%;
   max-width: 800px;
   height: auto;
@@ -106,12 +106,12 @@
   overflow: hidden;
 }
 
-.testimonials-section {
+.description-testimonials-section {
   background-color: #f9fafb;
   text-align: center;
 }
 
-.testimonials-grid {
+.description-testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -119,32 +119,32 @@
   margin: 0 auto;
 }
 
-.cta-section {
+.description-cta-section {
   background: linear-gradient(135deg, #6366f1 0%, #9333ea 100%);
   color: white;
   text-align: center;
 }
 
-.cta-content {
+.description-cta-content {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.cta-title {
+.description-cta-title {
   font-size: 3rem;
   font-weight: 700;
   font-family: 'Pretendard-Bold';
   margin-bottom: 1rem;
 }
 
-.cta-subtitle {
+.description-cta-subtitle {
   font-size: 1.125rem;
   margin-bottom: 2rem;
   opacity: 0.9;
   font-family: 'Pretendard-Regular';
 }
 
-.cta-button {
+.description-cta-button {
   background-color: white;
   color: #9333ea;
   font-weight: 600;
@@ -158,7 +158,7 @@
   font-family: 'Pretendard-Regular';
 }
 
-.cta-button:hover {
+.description-cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
@@ -221,16 +221,16 @@
 }
 
 @media (max-width: 768px) {
-  .hero-title {
+  .description-hero-title {
     font-size: 2.5rem;
   }
 
-  .section-title {
+  .chat-section-title {
     font-size: 2rem;
   }
 
-  .features-grid,
-  .testimonials-grid {
+  .description-features-grid,
+  .description-testimonials-grid {
     grid-template-columns: 1fr;
   }
 }
