@@ -8,23 +8,39 @@ import ClubNameBox from "../../components/ClubNameBox";
 
 const MainPage = ()=>{
     const [selectedCategories, setSelectedCategories] = useState(["전체"]);
+    const [sortType, setSortType] = useState('name');
 
     const handleCategoryChange = (categories) => {
         setSelectedCategories(categories);
     };
 
-    const filteredClubs = ClubData.filter(club => {
+    const handleSort = sort => {
+        setSortType(sort);
+    };
+
+    const filtered = ClubData.filter(club => {
         if (selectedCategories.includes("전체")) return true;
         return selectedCategories.includes(club.category);
     });
 
+    const sortedClubs = [...filtered].sort((a, b) => {
+        if (sortType === 'name') {
+            return a.name.localeCompare(b.name, 'ko'); 
+        } else if (sortType === 'category') {
+            return 0;
+        } else {
+            return 0;
+        }
+    });
+
+
     return(
         <div className="MainPage_container">
             <SearchBox />
-            <ClubCountAndAlignBox count={filteredClubs.length}/>
+            <ClubCountAndAlignBox count={sortedClubs.length} handleSort={handleSort}/>
             <ClubCategoryBox onChange={handleCategoryChange}/>
             <div className="MainPage_ClubList">
-                {filteredClubs.map((club, index) => (
+                {sortedClubs.map((club, index) => (
                 <ClubNameBox
                     key={index}
                     name={club.name}
