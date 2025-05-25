@@ -33,11 +33,13 @@ html, body {
     margin-left: 25px;
     border-right: 2.5px solid rgba(0,0,0,.1);
     padding-right: 7px;
+    cursor: pointer;
 }
 
 .ClubNameBox_label{
     color:#686868;
     padding-left: 7px;
+    cursor: pointer;
 }
 
 .ClubNameBox_icon_wrapper{

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../index.css';
 import { useParams } from 'react-router-dom';
-import Button from '../../components/Button';
+import Button from '../../components/Button/Button';
 import ClubinfoBox from '../../components/ClubinfoBox/ClubinfoBox';
 import ClubDetailTitle from '../../components/clubDetailTitle/clubDetailTitle';
 import clubData from '../../constants/sejong_all_clubs.json';
