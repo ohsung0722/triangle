@@ -32,11 +32,11 @@ function DescriptionChatBotPage() {
   })
 
   return (
-    <div className="landing-page">
+    <div className="description-landing-page">
       <ChatBot highlight={isDemoInView}/>
       <motion.section
         ref={targetRef}
-        className="section hero-section"
+        className="description-section description-hero-section"
         style={{ opacity, scale, y }}
       >
         <div className="floating-shapes">
@@ -64,9 +64,9 @@ function DescriptionChatBotPage() {
           ))}
         </div>
 
-        <div className="hero-content">
+        <div className="description-hero-content">
           <motion.h1
-            className="hero-title"
+            className="description-hero-title"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -76,7 +76,7 @@ function DescriptionChatBotPage() {
             동아리 검색의 혁신을 경험하세요
           </motion.h1>
           <motion.p
-            className="hero-subtitle"
+            className="description-hero-subtitle"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -89,18 +89,18 @@ function DescriptionChatBotPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <button className="hero-button">지금 시작하기</button>
+            <button className="description-hero-button">지금 시작하기</button>
           </motion.div>
         </div>
       </motion.section>
 
-      <section className="section features-section">
+      <section className="description-section description-features-section">
         <SectionTitle
           title="강력한 기능"
           subtitle="AI 기반 챗봇으로 당신에게 맞는 동아리를 찾아보세요"
         />
 
-        <div className="features-grid">
+        <div className="description-features-grid">
           <FeatureCard
             icon={Zap}
             title="실시간 응답"
@@ -139,15 +139,15 @@ function DescriptionChatBotPage() {
           />
         </div>
       </section>
-      <section className="section demo-section" ref={demoRef}>
-        <div className="demo-container">
+      <section className="description-section description-demo-section" ref={demoRef}>
+        <div className="description-demo-container">
           <SectionTitle
             title="직접 경험해보세요"
             subtitle="오른쪽 하단의 챗봇 아이콘을 클릭하여 지금 바로 AI 챗봇을 체험해보세요"
           />
 
           <motion.div
-            className="demo-image"
+            className="description-demo-image"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -165,13 +165,13 @@ function DescriptionChatBotPage() {
           </motion.div>
         </div>
       </section>
-      <section className="section testimonials-section">
+      <section className="description-section description-testimonials-section">
         <SectionTitle
           title="체험 후기"
           subtitle="'세모'의 AI 챗봇을 사용한 학생들의 생생한 경험담을 확인하세요"
         />
 
-        <div className="testimonials-grid">
+        <div className="description-testimonials-grid">
           <TestimonialCard
             content="평소 어떤 동아리를 가입할지 고민을 많이 했었는데, 세모의 챗봇 덕분에 좋은 동아리에 가입해 즐거운 학교생활 보내고 있어요!"
             name="서상혁"
@@ -192,20 +192,20 @@ function DescriptionChatBotPage() {
           />
         </div>
       </section>
-      <section className="section cta-section">
+      <section className="description-section description-cta-section">
         <motion.div
-          className="cta-content"
+          className="description-cta-content"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="cta-title">지금 바로 시작하세요</h2>
-          <p className="cta-subtitle">
+          <h2 className="description-cta-title">지금 바로 시작하세요</h2>
+          <p className="description-cta-subtitle">
             AI 챗봇으로 당신에게 꼭 맞는 동아리와 함께 학교생활을 즐길 준비가
             되셨나요?
           </p>
-          <button className="cta-button">무료로 시작하기</button>
+          <button className="description-cta-button">무료로 시작하기</button>
         </motion.div>
       </section>
     </div>

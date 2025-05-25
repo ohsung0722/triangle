@@ -115,7 +115,7 @@ function ChatBot({highlight}) {
           >
             <div className="chat-container">
               <motion.div className="chat-header" layout>
-                <div className="header-title">
+                <div className="chat_header_title">
                   <div className="avatar bot-avatar">
                     <MessageSquare size={16} />
                   </div>

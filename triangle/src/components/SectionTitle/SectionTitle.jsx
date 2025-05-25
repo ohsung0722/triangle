@@ -9,10 +9,10 @@ function SectionTitle({title, subtitle, center = true}){
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className={center ? "text-centered" : ""} 
+            className={center ? "chat-text-centered" : ""} 
         >
-            <h2 className="section-title">{title}</h2>
-            {subtitle && <p className="section-subtitle">{subtitle}</p>}
+            <h2 className="chat-section-title">{title}</h2>
+            {subtitle && <p className="chat-section-subtitle">{subtitle}</p>}
         </motion.div>
     )
 }
