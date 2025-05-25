@@ -12,50 +12,21 @@ const LandingPage = () => {
 
   const handleFeatureClick = (feature) => {
     const content = {
-      '챗 봇': {
-        title: 'Easy to Use',
+      'About': {
+        title: 'About Us',
         content: (
           <div className="space-y-4">
             <p>
-              Our intuitive interface is designed with user experience in mind, making it easy for anyone to get started.
+              세종대학교 소프트웨어학과
             </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Simple and clean design</li>
-              <li>Intuitive navigation</li>
-              <li>Quick access to features</li>
-              <li>User-friendly controls</li>
-            </ul>
-          </div>
-        )
-      },
-      '검색 창': {
-        title: 'Powerful Tools',
-        content: (
-          <div className="space-y-4">
             <p>
-              Access a comprehensive suite of tools designed to enhance your learning experience.
+            권오성, 서상혁, 신혜연, 윤지영 4명이 개발한 동아리 추천 서비스입니다.
             </p>
             <ul className="list-disc list-inside space-y-2">
-              <li>Advanced search capabilities</li>
-              <li>Real-time collaboration features</li>
-              <li>Resource management tools</li>
-              <li>Customizable workspace</li>
-            </ul>
-          </div>
-        )
-      },
-      '즐겨찾기': {
-        title: '24/7 Support',
-        content: (
-          <div className="space-y-4">
-            <p>
-              Our dedicated support team is always ready to help you with any questions or issues.
-            </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Round-the-clock assistance</li>
-              <li>Quick response times</li>
-              <li>Expert guidance</li>
-              <li>Comprehensive help resources</li>
+              <li>권오성: https://github.com/ohsung0722</li>
+              <li>서상혁: https://github.com/SangHyeok0908</li>
+              <li>신혜연: https://github.com/shymirr</li>
+              <li>윤지영: https://github.com/yoon764</li>
             </ul>
           </div>
         )
@@ -82,7 +53,7 @@ const LandingPage = () => {
               <p>무엇이든 물어보세요</p>
               <Button 
                 variant="secondary"
-                onClick={() => handleFeatureClick('챗 봇')}
+                // onClick={() => handleFeatureClick('챗 봇')}
               >
                 Learn More
               </Button>
@@ -92,7 +63,7 @@ const LandingPage = () => {
               <p>원하는 동아리를 바로 확인할 수 있어요</p>
               <Button 
                 variant="secondary"
-                onClick={() => handleFeatureClick('검색 창')}
+                // onClick={() => handleFeatureClick('검색 창')}
               >
                 Learn More
               </Button>
@@ -102,7 +73,7 @@ const LandingPage = () => {
               <p>원하는 동아리를 손쉽게 추가할 수 있어요</p>
               <Button 
                 variant="secondary"
-                onClick={() => handleFeatureClick('즐겨찾기')}
+                // onClick={() => handleFeatureClick('즐겨찾기')}
               >
                 Learn More
               </Button>
@@ -129,9 +100,9 @@ const LandingPage = () => {
             <h4>About Us</h4>
             <Button 
               variant="outline"
-              to="/about"
+              onClick={() => handleFeatureClick('About')}
             >
-              About
+              About US
             </Button>
           </div>
           <div className="landing-footer-section">
