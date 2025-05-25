@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Dialog from '../components/Dialog';
-import Button from '../components/Button';
+import Dialog from '../../components/Dialog/Dialog';
+import Button from '../../components/Button/Button';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -45,10 +45,10 @@ const LandingPage = () => {
       </header>
 
       <main className="landing-content">
-        <section className="features-section">
+        <section className="landing-features-section">
           <h2>Our Features</h2>
-          <div className="features-grid">
-            <div className="feature-card">
+          <div className="landing-features-grid">
+            <div className="landing-feature-card">
               <h3>챗 봇</h3>
               <p>무엇이든 물어보세요</p>
               <Button 
@@ -58,7 +58,7 @@ const LandingPage = () => {
                 Learn More
               </Button>
             </div>
-            <div className="feature-card">
+            <div className="landing-feature-card">
               <h3>검색 창</h3>
               <p>원하는 동아리를 바로 확인할 수 있어요</p>
               <Button 
@@ -68,7 +68,7 @@ const LandingPage = () => {
                 Learn More
               </Button>
             </div>
-            <div className="feature-card">
+            <div className="landing-feature-card">
               <h3>즐겨찾기</h3>
               <p>원하는 동아리를 손쉽게 추가할 수 있어요</p>
               <Button 
@@ -81,7 +81,7 @@ const LandingPage = () => {
           </div>
         </section>
 
-        <section className="cta-section">
+        <section className="landing-cta-section">
           <h2>지금 바로 시작하세요</h2>
           <p>당신에게 적합한 동아리를 찾아보세요</p>
           <Button 
@@ -95,9 +95,9 @@ const LandingPage = () => {
       </main>
 
       <footer className="landing-footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h4>About</h4>
+        <div className="landing-footer-content">
+          <div className="landing-footer-section">
+            <h4>About Us</h4>
             <Button 
               variant="outline"
               onClick={() => handleFeatureClick('About')}
@@ -105,7 +105,7 @@ const LandingPage = () => {
               About US
             </Button>
           </div>
-          <div className="footer-section">
+          <div className="landing-footer-section">
             <h4>Contact</h4>
             <Button 
               variant="outline"
@@ -114,7 +114,7 @@ const LandingPage = () => {
               Github Page
             </Button>
           </div>
-          <div className="footer-section">
+          <div className="landing-footer-section">
             <h4>Resources</h4>
             <Button 
               variant="outline"

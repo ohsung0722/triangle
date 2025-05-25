@@ -6,6 +6,8 @@
     background-color: #F9FAFB;
     flex-grow: 1; 
     border : 1px solid rgba(0,0,0,.01);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .SearchBox_input:hover{

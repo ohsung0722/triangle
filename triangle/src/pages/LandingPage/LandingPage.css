@@ -57,12 +57,12 @@
   justify-content: center;
 }
 
-.features-section {
+.landing-features-section {
   padding: 6rem 2rem;
   background-color: white;
 }
 
-.features-section h2 {
+.landing-features-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
@@ -70,7 +70,7 @@
   font-family: 'Pretendard-Bold', sans-serif;
 }
 
-.features-grid {
+.landing-features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -78,7 +78,7 @@
   margin: 0 auto;
 }
 
-.feature-card {
+.landing-feature-card {
   padding: 2rem;
   border-radius: 0.5rem;
   background-color: #f8fafc;
@@ -86,37 +86,37 @@
   transition: transform 0.2s;
 }
 
-.feature-card:hover {
+.landing-feature-card:hover {
   transform: translateY(-5px);
 }
 
-.feature-card h3 {
+.landing-feature-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #1e293b;
   font-family: 'Pretendard-SemiBold', sans-serif;
 }
 
-.feature-card p {
+.landing-feature-card p {
   color: #64748b;
   margin-bottom: 1.5rem;
   font-family: 'Pretendard-Regular', sans-serif;
 }
 
-.cta-section {
+.landing-cta-section {
   padding: 6rem 2rem;
   text-align: center;
   background-color: #f8fafc;
 }
 
-.cta-section h2 {
+.landing-cta-section h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #1e293b;
   font-family: 'Pretendard-Bold', sans-serif;
 }
 
-.cta-section p {
+.landing-cta-section p {
   font-size: 1.25rem;
   color: #64748b;
   margin-bottom: 2rem;
@@ -129,7 +129,7 @@
   padding: 4rem 2rem;
 }
 
-.footer-content {
+.landing-footer-content {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -137,7 +137,7 @@
   gap: 2rem;
 }
 
-.footer-section {
+.landing-footer-section {
   text-align: center;
 }
 
@@ -153,8 +153,8 @@
   }
 
   .hero-content h2,
-  .features-section h2,
-  .cta-section h2 {
+  .landing-features-section h2,
+  .landing-cta-section h2 {
     font-size: 2rem;
   }
 
@@ -162,7 +162,7 @@
     flex-direction: column;
   }
 
-  .features-grid {
+  .landing-features-grid {
     grid-template-columns: 1fr;
   }
 } 

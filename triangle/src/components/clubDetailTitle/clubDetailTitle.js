@@ -3,7 +3,10 @@ import '../../index.css';
 import './clubDetailTitle.css';
 import clubImg from '../../assets/images/sejong_logo.png';
 
-const ClubDetailTitle = () => {
+const ClubDetailTitle = ( { club } ) => {
+
+    const { name, category, area } = club;
+
     return(
         <div id="clubDetailTitleContainer">
             <img
@@ -12,11 +15,9 @@ const ClubDetailTitle = () => {
                 id="clubImg"
             />
             <div id="clubTextContainer">
-                <div id="clubTitle">동아리명</div>
+                <div id="clubTitle">{name}</div>
                 <div id="subtitle">
-                    <span id="category">분류</span>
-                    <span id="midLine">|</span>
-                    <span id="subcategory">상세분류</span>
+                    <span>{category}</span> | <span>{area}</span>
                 </div>
             </div>
         </div>
