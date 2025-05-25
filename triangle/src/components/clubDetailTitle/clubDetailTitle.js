@@ -8,15 +8,15 @@ const ClubDetailTitle = ( { club } ) => {
     const { name, category, area } = club;
 
     return(
-        <div id="clubDetailTitleContainer">
+        <div className="clubDetailTitle_Container">
             <img
                 src={clubImg}
                 alt="동아리프로필"
-                id="clubImg"
+                className="clubDetailTitle_clubImg"
             />
-            <div id="clubTextContainer">
-                <div id="clubTitle">{name}</div>
-                <div id="subtitle">
+            <div className="clubDetailTitle_clubTextContainer">
+                <div className="clubDetailTitle_clubTitle">{name}</div>
+                <div className="clubDetailTitle_subtitle">
                     <span>{category}</span> | <span>{area}</span>
                 </div>
             </div>
