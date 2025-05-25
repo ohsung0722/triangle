@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { TestimonialCard } from "../../components/TestimonialCard/TestimonialCard";
 import chatbotImage from "../../assets/images/chatbot_image.png";
+import { useNavigate } from 'react-router-dom';
 
 function DescriptionChatBotPage() {
   const targetRef = useRef(null);
@@ -30,6 +31,7 @@ function DescriptionChatBotPage() {
     margin: '-100px',
     amount: 0.5,
   })
+  const navigate = useNavigate();
 
   return (
     <div className="description-landing-page">
@@ -89,7 +91,7 @@ function DescriptionChatBotPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <button className="description-hero-button">지금 시작하기</button>
+            <button className="description-hero-button" onClick={() => navigate('/main')}>지금 시작하기</button>
           </motion.div>
         </div>
       </motion.section>
@@ -205,7 +207,7 @@ function DescriptionChatBotPage() {
             AI 챗봇으로 당신에게 꼭 맞는 동아리와 함께 학교생활을 즐길 준비가
             되셨나요?
           </p>
-          <button className="description-cta-button">무료로 시작하기</button>
+          <button className="description-cta-button" onClick={() => navigate('/main')}>무료로 시작하기</button>
         </motion.div>
       </section>
     </div>

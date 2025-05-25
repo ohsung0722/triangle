@@ -11,22 +11,19 @@ import { ClubInfo } from "./pages/ClubInfo/ClubInfo";
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/main',
         element: <UserLayout/>,
         children: [
-            {index: true, element: <LandingPage/>},
+            {index: true, element: <MainPage/>},
             {path: '*', element: <NotFoundPage/>},
-            {path: 'main', element: <MainPage/>},
-            {path: 'club/:id', element: <ClubInfo/> },
-            {path: 'detail', element: <TestPage/>},
-         
+            {path: 'club/:id', element: <ClubInfo/> },         
         ]
     },
     {
-        path: '/description',
+        path: '/',
         element: <DescriptionLayout/>,
         children:[
-            {index: true, element: <TestPage/>},
+            {index: true, element: <LandingPage/>},
             {path: '*', element: <NotFoundPage/>},
             {path: 'chatbot', element:<DescriptionChatBotPage/>}
         ]

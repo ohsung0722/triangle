@@ -53,6 +53,7 @@ const LandingPage = () => {
               <p>무엇이든 물어보세요</p>
               <Button 
                 variant="secondary"
+                to="/chatbot"
                 // onClick={() => handleFeatureClick('챗 봇')}
               >
                 Learn More
@@ -87,7 +88,7 @@ const LandingPage = () => {
           <Button 
             size="large" 
             variant="primary"
-            to="/get-started"
+            to="/main"
           >
             Get Started
           </Button>
