@@ -23,7 +23,8 @@ const router = createBrowserRouter([
         path: '/',
         element: <DescriptionLayout/>,
         children:[
-            {index: true, element: <LandingPage/>},
+            // {index: true, element: <LandingPage/>},
+            {index: true, element: <MainPage/>},
             {path: '*', element: <NotFoundPage/>},
             {path: 'chatbot', element:<DescriptionChatBotPage/>}
         ]
