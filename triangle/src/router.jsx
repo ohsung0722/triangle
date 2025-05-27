@@ -11,7 +11,7 @@ import { ClubInfo } from "./pages/ClubInfo/ClubInfo";
 
 const router = createBrowserRouter([
     {
-        path: '/main',
+        path: '/',
         element: <UserLayout/>,
         children: [
             {index: true, element: <MainPage/>},
@@ -19,15 +19,15 @@ const router = createBrowserRouter([
             {path: 'club/:id', element: <ClubInfo/> },         
         ]
     },
-    {
-        path: '/',
-        element: <DescriptionLayout/>,
-        children:[
-            {index: true, element: <LandingPage/>},
-            {path: '*', element: <NotFoundPage/>},
-            {path: 'chatbot', element:<DescriptionChatBotPage/>}
-        ]
-    }
+    // {
+    //     path: '/description',
+    //     element: <DescriptionLayout/>,
+    //     children:[
+    //         {index: true, element: <LandingPage/>},
+    //         {path: '*', element: <NotFoundPage/>},
+    //         {path: 'chatbot', element:<DescriptionChatBotPage/>}
+    //     ]
+    // }
 ])
 
 export default router;
