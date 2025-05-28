@@ -1,4 +1,4 @@
-import React, { useInsertionEffect, useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./DescriptionChatBotPage.css";
 import { ChatBot } from "../../components/ChatBot/ChatBot";
 import { useScroll, useTransform } from "framer-motion";
@@ -17,8 +17,10 @@ import { TestimonialCard } from "../../components/TestimonialCard/TestimonialCar
 import chatbotImage from "../../assets/images/chatbot_image.png";
 import { useNavigate } from 'react-router-dom';
 import { FavoriteSection } from "../../components/FavoriteSection/FavoriteSection";
+import { Dialog } from "../../components/Dialog/Dialog";
 
 function DescriptionChatBotPage() {
+  const [isDeveloperDialogOpen, setIsDeveloperDialogOpen] = useState(false)
   const targetRef = useRef(null);
   const demoRef = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -32,11 +34,17 @@ function DescriptionChatBotPage() {
     margin: '-100px',
     amount: 0.5,
   })
+  const handleDeveloperLinkClick = (e) => {
+    e.preventDefault()
+    setIsDeveloperDialogOpen(true)
+  }
+  
   const navigate = useNavigate();
 
   return (
     <div className="description-landing-page">
       <ChatBot highlight={isDemoInView}/>
+      <Dialog isOpen={isDeveloperDialogOpen} onClose={() => setIsDeveloperDialogOpen(false)} />
       <motion.section
         ref={targetRef}
         className="description-section description-hero-section"
@@ -175,7 +183,7 @@ function DescriptionChatBotPage() {
       <section className="description-section description-demo-section">
         <div className="description-demo-container">
           <SectionTitle
-            title="스마트한 관심사 분석"
+            title="스마트한 그래프 분석"
             subtitle="즐겨찾기를 기반으로 고객의 관심 동아리 분포를 분석합니다"
           />
 
@@ -242,6 +250,29 @@ function DescriptionChatBotPage() {
           <button className="description-cta-button" onClick={() => navigate('/main')}>무료로 시작하기</button>
         </motion.div>
       </section>
+
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-links">
+            <a href="#" className="footer-link">
+              홈
+            </a>
+            <a href="#" className="footer-link">
+              동아리 그래프
+            </a>
+            <a href="#" className="footer-link" onClick={handleDeveloperLinkClick}>
+              개발팀
+            </a>
+            <a href="https://github.com/SejongOSS/triangle" className="footer-link">
+              Github
+            </a>
+            <a href="http://www.sejong.ac.kr/" className="footer-link">
+              세종대 홈페이지
+            </a>
+          </div>
+          <div className="footer-copyright">© {new Date().getFullYear()} 세모. All rights reserved.</div>
+        </div>
+      </footer>
     </div>
   );
 }
