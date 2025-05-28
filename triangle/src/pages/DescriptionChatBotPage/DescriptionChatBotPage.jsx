@@ -73,7 +73,7 @@ function DescriptionChatBotPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            '세모'만의 AI 챗봇으로
+            '세모'만의 차별화된 기능으로 
             <br />
             동아리 검색의 혁신을 경험하세요
           </motion.h1>
@@ -83,8 +83,7 @@ function DescriptionChatBotPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            24시간 지원, 실시간 응답, 개인화된 경험을 제공하는 <br></br>최첨단
-            AI 챗봇 솔루션을 만나보세요.
+            즐겨찾기, 그래프 분석, AI 챗봇 솔루션을 제공하는 <br></br>새로운 플랫폼 '세모'를 만나보세요.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}

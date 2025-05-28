@@ -19,15 +19,15 @@ const router = createBrowserRouter([
             {path: 'club/:id', element: <ClubInfo/> },         
         ]
     },
-    // {
-    //     path: '/description',
-    //     element: <DescriptionLayout/>,
-    //     children:[
-    //         {index: true, element: <LandingPage/>},
-    //         {path: '*', element: <NotFoundPage/>},
-    //         {path: 'chatbot', element:<DescriptionChatBotPage/>}
-    //     ]
-    // }
+    {
+        path: '/description',
+        element: <DescriptionLayout/>,
+        children:[
+            {index: true, element: <LandingPage/>},
+            {path: '*', element: <NotFoundPage/>},
+            {path: 'chatbot', element:<DescriptionChatBotPage/>}
+        ]
+    }
 ])
 
 export default router;
