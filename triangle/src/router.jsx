@@ -5,7 +5,6 @@ import { TestPage } from "./pages/TestPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { DescriptionChatBotPage } from "./pages/DescriptionChatBotPage/DescriptionChatBotPage";
 import { DescriptionLayout } from "./layouts/DescriptionLayout/DescriptionLayout";
-import LandingPage from "./pages/LandingPage/LandingPage";
 import MainPage from "./pages/MainPage/MainPage";
 import { ClubInfo } from "./pages/ClubInfo/ClubInfo";
 
@@ -23,9 +22,8 @@ const router = createBrowserRouter([
         path: '/description',
         element: <DescriptionLayout/>,
         children:[
-            {index: true, element: <LandingPage/>},
+            {index: true, element: <DescriptionChatBotPage/>},
             {path: '*', element: <NotFoundPage/>},
-            {path: 'chatbot', element:<DescriptionChatBotPage/>}
         ]
     }
 ])
