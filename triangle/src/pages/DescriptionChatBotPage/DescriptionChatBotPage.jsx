@@ -16,6 +16,7 @@ import {
 import { TestimonialCard } from "../../components/TestimonialCard/TestimonialCard";
 import chatbotImage from "../../assets/images/chatbot_image.png";
 import { useNavigate } from 'react-router-dom';
+import { FavoriteSection } from "../../components/FavoriteSection/FavoriteSection";
 
 function DescriptionChatBotPage() {
   const targetRef = useRef(null);
@@ -83,8 +84,8 @@ function DescriptionChatBotPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            즐겨찾기, 그래프 분석, AI 챗봇 솔루션을 제공하는 <br></br>새로운 플랫폼 '세모'를 만나보세요.
-          </motion.p>
+            스마트한 AI 챗봇 솔루션, 그래프 분석, 즐겨찾기 시스템을 제공하는 <br></br>새로운 플랫폼 '세모'를 만나보세요.
+          </motion.p> 
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -166,6 +167,38 @@ function DescriptionChatBotPage() {
           </motion.div>
         </div>
       </section>
+
+      <section className="description-section">
+          <FavoriteSection/>
+      </section>
+
+      <section className="description-section description-demo-section">
+        <div className="description-demo-container">
+          <SectionTitle
+            title="스마트한 관심사 분석"
+            subtitle="즐겨찾기를 기반으로 고객의 관심 동아리 분포를 분석합니다"
+          />
+
+          <motion.div
+            className="description-demo-image"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <motion.img
+              src={chatbotImage}
+              alt="그래프 캡처 이미지"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              width={800}
+              height={500}
+            />
+          </motion.div>
+        </div>
+      </section>
+
       <section className="description-section description-testimonials-section">
         <SectionTitle
           title="체험 후기"
@@ -174,7 +207,7 @@ function DescriptionChatBotPage() {
 
         <div className="description-testimonials-grid">
           <TestimonialCard
-            content="평소 어떤 동아리를 가입할지 고민을 많이 했었는데, 세모의 챗봇 덕분에 좋은 동아리에 가입해 즐거운 학교생활 보내고 있어요!"
+            content="평소 어떤 동아리를 가입할지 고민을 많이 했었는데, 세모 덕분에 좋은 동아리에 가입해 즐거운 학교생활 보내고 있어요!"
             name="서상혁"
             title="프로 다이어터, 개발자 꿈나무"
             delay={0.1}
@@ -186,7 +219,7 @@ function DescriptionChatBotPage() {
             delay={0.2}
           />
           <TestimonialCard
-            content="어떤 동아리가 있는지, 특징이 뭔지 물어보면 바로바로 알려주는 챗봇이 소개해주는 페이지 너무 좋아요! 세모 최고!"
+            content="관심있는 동아리를 저장하고 확인이 바로 가능해서 너무 편리해요! 그래프로 동아리 종류를 한눈에 확인할 수 있는 것도 너무 편리한 것 같아요!"
             name="윤지영"
             title="엔샵 26기 지원자"
             delay={0.3}
@@ -203,7 +236,7 @@ function DescriptionChatBotPage() {
         >
           <h2 className="description-cta-title">지금 바로 시작하세요</h2>
           <p className="description-cta-subtitle">
-            AI 챗봇으로 당신에게 꼭 맞는 동아리와 함께 학교생활을 즐길 준비가
+            '세모'와 함께 당신에게 꼭 맞는 동아리에서 학교생활을 즐길 준비가
             되셨나요?
           </p>
           <button className="description-cta-button" onClick={() => navigate('/main')}>무료로 시작하기</button>
