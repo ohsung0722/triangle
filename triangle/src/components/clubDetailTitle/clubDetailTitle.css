@@ -36,18 +36,6 @@
   color: #888;
 }
 
-/* 분류 (색 지정)*/
-.clubDetailTitle_category {
-  color: #f06292;
-  font-weight: 500;
-}
-
-/* 가운데 선 */
-.clubDetailTitle_midLine {
-  margin: 0 8px;
-  color: #ccc;
-}
-
 /* 상세분류 (일반색) */
 .clubDetailTitle_subcategory {
   color: #555;
