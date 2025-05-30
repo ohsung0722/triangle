@@ -37,14 +37,15 @@
 .GraphPage_charts-grid {
   display: grid;
   gap: 32px;
+  margin-top: 30px;
   margin-bottom: 48px;
   display: flex;
   flex-direction: row;
 }
 
-@media (min-width: 768px) {
-  .charts-grid {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1330px) {
+  .GraphPage_charts-grid {
+    flex-direction: column;
   }
 }
 
@@ -65,7 +66,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #111827;
-  margin: 0 0 8px 0;
+  margin: 10px 0 0 0;
 }
 
 .GraphPage_card-header p {
