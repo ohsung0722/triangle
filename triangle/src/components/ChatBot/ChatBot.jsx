@@ -3,6 +3,7 @@ import "./ChatBot.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { Maximize2, MessageSquare, Minimize2, Send, X } from "lucide-react";
 import { MessageItem } from "./MessageItem";
+import { generateResponse } from "../../services/openaiService";
 
 function ChatBot({highlight}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +17,12 @@ function ChatBot({highlight}) {
     },
   ]);
   const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = async (e) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    if (!input.trim() || isLoading) return;
 
     const userMessage = {
       id: Date.now().toString(),
@@ -31,28 +33,31 @@ function ChatBot({highlight}) {
 
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
+    setIsLoading(true);
 
-    setTimeout(() => {
-      const botResponses = [
-        "살 빼 라 서 상 혁",
-        "코 딩 해 라 서 상 혁",
-        "이은상 교수님 최고",
-        "리 액 트 공 부 좀 해 서 상 혁",
-        "공 부 해 라 서 상 혁",
-      ];
-
-      const randomResponse =
-        botResponses[Math.floor(Math.random() * botResponses.length)];
-
+    try {
+      const response = await generateResponse(input);
+      
       const botMessage = {
         id: (Date.now() + 1).toString(),
-        content: randomResponse,
+        content: response,
         sender: "bot",
         timestamp: new Date(),
       };
 
       setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
+    } catch (error) {
+      console.error('Error getting response from OpenAI:', error);
+      const errorMessage = {
+        id: (Date.now() + 1).toString(),
+        content: "죄송합니다. 응답을 생성하는 중에 오류가 발생했습니다. 다시 시도해주세요.",
+        sender: "bot",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const toggleChat = () => {
@@ -165,11 +170,20 @@ function ChatBot({highlight}) {
                         type="text"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        placeholder="메시지를 입력하세요..."
+                        placeholder={isLoading ? "응답을 생성하는 중..." : "메시지를 입력하세요..."}
                         className="message-input"
+                        disabled={isLoading}
                       />
-                      <button type="submit" className="send-button">
-                        <Send size={16} />
+                      <button 
+                        type="submit" 
+                        className={`send-button ${isLoading ? 'loading' : ''}`}
+                        disabled={isLoading}
+                      >
+                        {isLoading ? (
+                          <div className="loading-spinner" />
+                        ) : (
+                          <Send size={16} />
+                        )}
                       </button>
                     </form>
                   </motion.div>
