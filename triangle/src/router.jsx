@@ -17,7 +17,6 @@ const router = createBrowserRouter([
             {index: true, element: <MainPage/>},
             {path: '*', element: <NotFoundPage/>},
             {path: 'club/:id', element: <ClubInfo/> },
-            {path: 'test', element: <TestPage/> },         
         ]
     },
     // {

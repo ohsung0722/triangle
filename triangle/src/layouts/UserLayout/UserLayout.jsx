@@ -7,7 +7,7 @@ function UserLayout(){
     return(
         <>
             <div className="UserLayoutContainer">
-                {/* <TopNavbar/> */}
+                <TopNavbar/>
                 <div className="UserContentContainer">
                     <Outlet/>
                 </div>
