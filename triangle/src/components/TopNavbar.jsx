@@ -1,19 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './TopNavbar.css';
 import logo from '../assets/images/triangle_logo.png';
 
 const TopNavbar = () =>{
+    const navigate = useNavigate();
+    
     return(
         <div className="TopNavBar_Container">
             <div className="TopNavBar_Logo_Container">
-                <Link to="/main">
+                <div className="TopNavBar_Logo_Wrapper" onClick={() => navigate('/')}>
                     <img
                         src={logo}
                         alt="로고"
                         className="TopNavBar_Logo"
                     />
-                </Link>
+                </div>
+                <div className="TopNavBar_Button" onClick={() => navigate('/graph')}>
+                    그래프
+                </div>
             </div>
         </div>
     );

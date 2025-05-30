@@ -13,18 +13,30 @@
     position: relative;
     width: 1120px;
     display: flex;
-    flex-direction: column;
-    pointer-events: none;
+    align-items: center;
+}
+
+.TopNavBar_Logo_Wrapper{
+    width: 120px; 
+    cursor: pointer;
 }
 
 .TopNavBar_Logo{
     max-height: 80px; 
     object-fit: contain; 
     display: block;
-    cursor: pointer;
     margin-left: 10px;
 }
 
-.TopNavBar_Logo_container img {
-    pointer-events: auto;
+.TopNavBar_Button{
+    font-family: "Pretendard-Bold", sans-serif;
+    margin-left: 60px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .6);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.TopNavBar_Button:hover{
+    color: #3B82F6; 
 }
