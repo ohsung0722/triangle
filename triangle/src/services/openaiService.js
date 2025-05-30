@@ -1,4 +1,5 @@
 import OpenAI from 'openai';
+import { SYSTEM_PROMPT } from '../constants/prompts';
 
 const openai = new OpenAI({
   apiKey: process.env.REACT_APP_OPENAI_API_KEY,
@@ -9,7 +10,10 @@ const openai = new OpenAI({
 export const generateResponse = async (prompt) => {
   try {
     const completion = await openai.chat.completions.create({
-      messages: [{ role: "user", content: prompt }],
+      messages: [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: prompt }
+      ],
       model: "gpt-3.5-turbo",
     });
 
