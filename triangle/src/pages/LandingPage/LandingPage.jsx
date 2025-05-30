@@ -126,14 +126,6 @@ const LandingPage = () => {
           </div>
         </div>
       </footer>
-
-      <Dialog
-        isOpen={isDialogOpen}
-        onClose={() => setIsDialogOpen(false)}
-        title={dialogContent.title}
-      >
-        {dialogContent.content}
-      </Dialog>
     </div>
   );
 };

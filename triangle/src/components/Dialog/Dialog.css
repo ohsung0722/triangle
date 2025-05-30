@@ -1,90 +1,256 @@
+/* Dialog 스타일 */
 .dialog-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .dialog-content {
-  background: white;
-  border-radius: 8px;
-  padding: 24px;
-  width: 90%;
-  max-width: 500px;
+  background: linear-gradient(135deg, #f8f6f6 0%, #efefef 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 800px;
+  width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dialog-header {
+  padding: 2rem 2rem 1rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(107, 114, 128, 0.1);
+  border: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #6b7280;
+}
+
+.dialog-close:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  transform: scale(1.1);
 }
 
 .dialog-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #9333ea, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dialog-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.developers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.developer-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.developer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #9333ea, #3b82f6, #10b981, #f59e0b);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.developer-card:hover::before {
+  transform: scaleX(1);
+}
+
+.developer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.developer-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9333ea, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #1a1a1a;
-  margin: 0;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.dialog-close-button {
-  background: none;
-  border: none;
-  padding: 4px;
-  cursor: pointer;
-  color: #666;
-  transition: color 0.2s;
+.developer-avatar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
 }
 
-.dialog-close-button:hover {
-  color: #333;
+.developer-card:hover .developer-avatar::before {
+  transform: translateX(100%);
 }
 
-.close-icon {
-  width: 24px;
-  height: 24px;
+.developer-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
 }
 
-.dialog-body {
-  color: #4a4a4a;
-  line-height: 1.5;
+.developer-role {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 
-/* Animation */
-.dialog-overlay {
-  animation: dialog_fadeIn 0.2s ease-out;
+.developer-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.dialog-content {
-  animation: dialog_slideIn 0.2s ease-out;
+.skill-tag {
+  background-color: rgba(147, 51, 234, 0.1);
+  color: #9333ea;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(147, 51, 234, 0.2);
 }
 
-@keyframes dialog_fadeIn {
-  from {
-    opacity: 0;
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #24292e, #1a1e22);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.github-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #2d3748, #1a202c);
+}
+
+.github-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+}
+
+.team-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  border-top: 1px solid rgba(229, 231, 235, 0.5);
+  margin-top: 1rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #9333ea;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .dialog-content {
+    margin: 1rem;
+    border-radius: 1rem;
   }
-  to {
-    opacity: 1;
+
+  .developers-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .dialog-header {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .dialog-title {
+    font-size: 1.5rem;
+  }
+
+  .team-stats {
+    padding: 1rem;
+    gap: 1rem;
   }
 }
-
-@keyframes dialog_slideIn {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-} 
