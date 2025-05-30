@@ -10,9 +10,9 @@ const PieGraph = ({ data}) => {
         봉사분과 : '#FFC8A2',
         종교분과 : '#FFD1DC',
         문화분과 : '#C9C9FF',
-        체육분과 : '#BFD8B8',
+        체육분과 : '#D2F6C5',
         공연분과 : '#FFFFB3',
-        학술분과 : '#D2F6C5'
+        학술분과 : '#C2F6FF'
     };
     const domain = data.map(d => d.category);
     let range;
@@ -35,11 +35,20 @@ const PieGraph = ({ data}) => {
     const margin = 40;
     const radius = Math.min(width, height) / 2 - margin;
 
+    let tooltip = d3.select('body').select('.tooltip');
+    if (tooltip.empty()) {
+      tooltip = d3.select('body')
+        .append('div')
+        .attr('class', 'pie-chart-tooltip');
+    }
+    tooltip.style('opacity', 0);
+
     const pieGenerator = d3.pie()
       .value(d => d.count)
       .sort(null);
+      
     const arcGenerator = d3.arc()
-      .innerRadius(0)
+      .innerRadius(radius-70)
       .outerRadius(radius);
 
     const arcData = pieGenerator(counts);
@@ -60,8 +69,27 @@ const PieGraph = ({ data}) => {
         .attr('fill', d => colorScale(d.data.category))
         .attr('stroke', '#fff')
         .attr('stroke-width', 2)
-      .append('title')
-        .text(d => `${d.data.category}: ${d.data.count}개`);
+        .on('mouseover', (event, d) => {
+          tooltip
+            .transition()
+            .duration(200)
+            .style('opacity', 1);
+          tooltip
+            .html(`<strong>${d.data.category}</strong><br/>${d.data.count}개`)
+            .style('left', `${event.pageX + 10}px`)
+            .style('top', `${event.pageY + 10}px`);
+        })
+        .on('mousemove', (event) => {
+          tooltip
+            .style('left', `${event.pageX + 10}px`)
+            .style('top', `${event.pageY + 10}px`);
+        })
+        .on('mouseout', () => {
+          tooltip
+            .transition()
+            .duration(200)
+            .style('opacity', 0);
+        });
 
     svg.selectAll('text')
       .data(arcData)
@@ -76,6 +104,7 @@ const PieGraph = ({ data}) => {
 
   return (
     <div className='pie-chart-container'>
+      <svg ref={svgRef} className='pie-chart' />
       <div className='pie-chart-label-container'>
         {data.map((d, i) => (
           <div key={i} className='legend-item'>
@@ -89,7 +118,6 @@ const PieGraph = ({ data}) => {
           </div>
         ))}
       </div>
-      <svg ref={svgRef} className='pie-chart' />
     </div>
   );
 };
