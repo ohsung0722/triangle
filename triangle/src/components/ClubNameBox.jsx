@@ -7,7 +7,7 @@ import filledStarIcon from '../assets/images/filled_star.svg';
 // name   : 동아리 이름
 // type   : 분과
 // detail : 분야
-const ClubNameBox = ({ name, type, detail }) => {
+const ClubNameBox = ({ name, type, detail,onToggleFavorite  }) => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -32,13 +32,17 @@ const ClubNameBox = ({ name, type, detail }) => {
           updated = stored.filter((n) => n !== name);
         }
         localStorage.setItem('favoriteClubs', JSON.stringify(updated));
+
+        if (onToggleFavorite) {
+          onToggleFavorite();
+        }
+
       } catch (e) {
         console.error('Failed to update favoriteClubs in localStorage', e);
       }
       return next;
     });
   };
-
 
   const getCategoryColor = (type) => {
     switch (type) {
