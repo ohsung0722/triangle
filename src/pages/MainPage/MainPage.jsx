@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './MainPage.css';
-import SearchBox from "../../components/SearchBox";
+import SearchBox from "../../components/SearchBox/SearchBox";
 import ClubCountAndAlignBox from "../../components/ClubSort/ClubCountAndAlignBox";
-import ClubCategoryBox from "../../components/ClubCategoryBox";
+import ClubCategoryBox from "../../components/ClubCategoryBox/ClubCategoryBox";
 import ClubData from "../../constants/sejong_all_clubs.json"
-import ClubNameBox from "../../components/ClubNameBox";
+import ClubNameBox from "../../components/ClubNameBox/ClubNameBox";
 
 const MainPage = () => {
   const [selectedCategories, setSelectedCategories] = useState(["전체"]);

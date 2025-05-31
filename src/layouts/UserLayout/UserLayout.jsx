@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import './UserLayout.css'
-import TopNavbar from '../../components/TopNavbar'
+import TopNavbar from '../../components/TopNavbar/TopNavbar'
 import { Footer } from "../../components/Footer/Footer";
 import { ChatBot } from "../../components/ChatBot/ChatBot";
 
