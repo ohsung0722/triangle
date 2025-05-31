@@ -162,47 +162,6 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.footer {
-  background-color: #111827;
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.footer-link {
-  color: #e5e7eb;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.footer-link:hover {
-  color: white;
-}
-
-.footer-copyright {
-  color: #9ca3af;
-  font-size: 0.875rem;
-}
-
 .floating-shapes {
   position: absolute;
   top: 0;

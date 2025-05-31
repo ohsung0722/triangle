@@ -10,7 +10,7 @@ import { ClubInfo } from "./pages/ClubInfo/ClubInfo";
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/main',
         element: <UserLayout/>,
         children: [
             {index: true, element: <MainPage/>},
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: '/description',
+        path: '/',
         element: <DescriptionLayout/>,
         children:[
             {index: true, element: <DescriptionChatBotPage/>},

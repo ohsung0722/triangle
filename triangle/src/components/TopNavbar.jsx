@@ -9,14 +9,14 @@ const TopNavbar = () =>{
     return(
         <div className="TopNavBar_Container">
             <div className="TopNavBar_Logo_Container">
-                <div className="TopNavBar_Logo_Wrapper" onClick={() => navigate('/')}>
+                <div className="TopNavBar_Logo_Wrapper" onClick={() => navigate('/main')}>
                     <img
                         src={logo}
                         alt="로고"
                         className="TopNavBar_Logo"
                     />
                 </div>
-                <div className="TopNavBar_Button" onClick={() => navigate('/graph')}>
+                <div className="TopNavBar_Button" onClick={() => navigate('/main/graph')}>
                     그래프
                 </div>
             </div>
