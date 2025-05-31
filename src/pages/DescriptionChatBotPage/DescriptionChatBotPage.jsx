@@ -1,3 +1,4 @@
+// DescriptionChatBotPage - AI 챗봇 기능을 소개하는 랜딩 페이지 컴포넌트
 import React, { useRef, useState } from "react";
 import "./DescriptionChatBotPage.css";
 import { ChatBot } from "../../components/ChatBot/ChatBot";
@@ -20,15 +21,18 @@ import { FavoriteSection } from "../../components/FavoriteSection/FavoriteSectio
 import { Dialog } from "../../components/Dialog/Dialog";
 
 function DescriptionChatBotPage() {
+  // 스크롤 애니메이션을 위한 ref와 설정
   const targetRef = useRef(null);
   const demoRef = useRef(null)
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start start", "end start"],
   });
+  // 스크롤에 따른 애니메이션 값 설정
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
   const y = useTransform(scrollYProgress, [0, 0.5], [0, 100]);
+  // 데모 섹션 뷰포트 감지
   const isDemoInView = useInView(demoRef, {
     margin: '-100px',
     amount: 0.5,
@@ -38,12 +42,16 @@ function DescriptionChatBotPage() {
 
   return (
     <div className="description-landing-page">
+      {/* AI 챗봇 컴포넌트 */}
       <ChatBot highlight={isDemoInView}/>
+      
+      {/* 히어로 섹션 */}
       <motion.section
         ref={targetRef}
         className="description-section description-hero-section"
         style={{ opacity, scale, y }}
       >
+        {/* 배경 애니메이션 요소 */}
         <div className="floating-shapes">
           {[...Array(10)].map((_, i) => (
             <motion.div
@@ -69,6 +77,7 @@ function DescriptionChatBotPage() {
           ))}
         </div>
 
+        {/* 히어로 섹션 콘텐츠 */}
         <div className="description-hero-content">
           <motion.h1
             className="description-hero-title"
@@ -98,12 +107,14 @@ function DescriptionChatBotPage() {
         </div>
       </motion.section>
 
+      {/* 주요 기능 소개 섹션 */}
       <section className="description-section description-features-section">
         <SectionTitle
           title="강력한 기능"
           subtitle="AI 기반 챗봇으로 당신에게 맞는 동아리를 찾아보세요"
         />
 
+        {/* 기능 카드 그리드 */}
         <div className="description-features-grid">
           <FeatureCard
             icon={Zap}
@@ -143,6 +154,8 @@ function DescriptionChatBotPage() {
           />
         </div>
       </section>
+
+      {/* 챗봇 데모 섹션 */}
       <section className="description-section description-demo-section" ref={demoRef}>
         <div className="description-demo-container">
           <SectionTitle
@@ -170,10 +183,12 @@ function DescriptionChatBotPage() {
         </div>
       </section>
 
+      {/* 즐겨찾기 기능 소개 섹션 */}
       <section className="description-section">
           <FavoriteSection/>
       </section>
 
+      {/* 그래프 분석 소개 섹션 */}
       <section className="description-section description-demo-section">
         <div className="description-demo-container">
           <SectionTitle
@@ -201,6 +216,7 @@ function DescriptionChatBotPage() {
         </div>
       </section>
 
+      {/* 사용자 후기 섹션 */}
       <section className="description-section description-testimonials-section">
         <SectionTitle
           title="체험 후기"
@@ -228,6 +244,8 @@ function DescriptionChatBotPage() {
           />
         </div>
       </section>
+
+      {/* CTA(Call-to-Action) 섹션 */}
       <section className="description-section description-cta-section">
         <motion.div
           className="description-cta-content"
