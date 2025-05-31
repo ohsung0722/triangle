@@ -82,3 +82,16 @@
   align-items: center;
   gap: 24px;
 }
+
+.GraphPage_info-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1330px) {
+  .GraphPage_info-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

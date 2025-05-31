@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './GraphPage.css';
 import PieGraph from "../../components/PieGraph/PieGraph";
 import ClubData from "../../constants/sejong_all_clubs.json";
+import ClubCountInfoBox from "../../components/ClubCountInfoBox/ClubCountInfoBox";
 
 const GraphPage = () => {
   const [favorites, setFavorites] = useState([]);
@@ -63,12 +64,32 @@ const GraphPage = () => {
             {
               favCounts.length > 0
                 ? <PieGraph data={favCounts} />
-                : <p style={{ textAlign: 'center', color: '#6b7280' }}>
+                : <p style={{ textAlign: 'center', color: '#6b7280', width:'600px' }}>
                     아직 즐겨찾기한 동아리가 없습니다.
                   </p>
             }
           </div>
         </div>
+      </div>
+      <div className="GraphPage_info-boxes">
+        {allCounts.map(({ category, count }) => {
+          const favObj = favCounts.find((f) => f.category === category);
+          const favCountForCategory = favObj ? favObj.count : 0;
+          const rate =
+            count > 0
+              ? Math.round((favCountForCategory / count) * 100)
+              : 0;
+
+          return (
+            <ClubCountInfoBox
+              key={category}
+              name={category}               
+              totalCount={count}           
+              favoriteCount={favCountForCategory}
+              rate={rate}                  
+            />
+          );
+        })}
       </div>
     </div>
   );
