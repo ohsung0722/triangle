@@ -20,7 +20,6 @@ import { FavoriteSection } from "../../components/FavoriteSection/FavoriteSectio
 import { Dialog } from "../../components/Dialog/Dialog";
 
 function DescriptionChatBotPage() {
-  const [isDeveloperDialogOpen, setIsDeveloperDialogOpen] = useState(false)
   const targetRef = useRef(null);
   const demoRef = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -34,17 +33,12 @@ function DescriptionChatBotPage() {
     margin: '-100px',
     amount: 0.5,
   })
-  const handleDeveloperLinkClick = (e) => {
-    e.preventDefault()
-    setIsDeveloperDialogOpen(true)
-  }
   
   const navigate = useNavigate();
 
   return (
     <div className="description-landing-page">
       <ChatBot highlight={isDemoInView}/>
-      <Dialog isOpen={isDeveloperDialogOpen} onClose={() => setIsDeveloperDialogOpen(false)} />
       <motion.section
         ref={targetRef}
         className="description-section description-hero-section"
@@ -250,29 +244,6 @@ function DescriptionChatBotPage() {
           <button className="description-cta-button" onClick={() => navigate('/main')}>무료로 시작하기</button>
         </motion.div>
       </section>
-
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-links">
-            <a href="#" className="footer-link">
-              홈
-            </a>
-            <a href="#" className="footer-link">
-              동아리 그래프
-            </a>
-            <a href="#" className="footer-link" onClick={handleDeveloperLinkClick}>
-              개발팀
-            </a>
-            <a href="https://github.com/SejongOSS/triangle" className="footer-link">
-              Github
-            </a>
-            <a href="http://www.sejong.ac.kr/" className="footer-link">
-              세종대 홈페이지
-            </a>
-          </div>
-          <div className="footer-copyright">© {new Date().getFullYear()} 세모. All rights reserved.</div>
-        </div>
-      </footer>
     </div>
   );
 }

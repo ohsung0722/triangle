@@ -5,7 +5,7 @@ import { Maximize2, MessageSquare, Minimize2, Send, X } from "lucide-react";
 import { MessageItem } from "./MessageItem";
 import { generateResponse } from "../../services/openaiService";
 
-function ChatBot({highlight}) {
+function ChatBot({highlight = false}) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [messages, setMessages] = useState([
