@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import './ClubNameBox.css';
 
-import starIcon from '../assets/images/star.svg';
-import filledStarIcon from '../assets/images/filled_star.svg';
+import starIcon from '../../assets/images/star.svg';
+import filledStarIcon from '../../assets/images/filled_star.svg';
 
 // name   : 동아리 이름
 // type   : 분과

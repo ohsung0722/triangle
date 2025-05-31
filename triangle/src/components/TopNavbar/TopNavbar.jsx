@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './TopNavbar.css';
-import logo from '../assets/images/triangle_logo.png';
-import graphIcon from '../assets/images/graph_icon.png';
+import logo from '../../assets/images/triangle_logo.png';
+import graphIcon from '../../assets/images/graph_icon.png';
 
 const TopNavbar = () =>{
     const navigate = useNavigate();

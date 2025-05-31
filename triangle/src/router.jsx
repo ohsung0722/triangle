@@ -1,8 +1,8 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { UserLayout } from "./layouts/UserLayout/UserLayout";
-import { TestPage } from "./pages/TestPage";
-import { NotFoundPage } from "./pages/NotFoundPage";
+import { TestPage } from './pages/TestPage/TestPage';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 import { DescriptionChatBotPage } from "./pages/DescriptionChatBotPage/DescriptionChatBotPage";
 import { DescriptionLayout } from "./layouts/DescriptionLayout/DescriptionLayout";
 import LandingPage from "./pages/LandingPage/LandingPage";
