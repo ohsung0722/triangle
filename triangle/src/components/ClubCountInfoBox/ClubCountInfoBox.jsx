@@ -3,12 +3,12 @@ import "./ClubCountInfoBox.css";
 
 const ClubCountInfoBox = ({ name, totalCount, favoriteCount, rate }) => {
   const colors = {
-    봉사분과: "#FFC8A2",
-    종교분과: "#FFD1DC",
-    문화분과: "#C9C9FF",
-    체육분과: "#D2F6C5",
-    공연분과: "#FFFFB3",
-    학술분과: "#C2F6FF",
+    봉사분과: "#81c784",
+    종교분과: "#ffb74d",
+    문화분과: "#ba68c8",
+    체육분과: "#ED1C24",
+    공연분과: "#f06292",
+    학술분과: "#64b5f6",
   };
 
   const categoryColor = colors[name] || "#E5E7EB";

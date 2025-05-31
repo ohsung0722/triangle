@@ -28,13 +28,22 @@
     margin-left: 10px;
 }
 
+.TopNavBar_icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
 .TopNavBar_Button{
     font-family: "Pretendard-Bold", sans-serif;
-    margin-left: 60px;
+    margin-left: auto;
     font-size: 20px;
     color: rgba(0, 0, 0, .6);
     border-radius: 4px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .TopNavBar_Button:hover{
