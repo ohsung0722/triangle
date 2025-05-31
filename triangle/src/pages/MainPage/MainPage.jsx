@@ -50,7 +50,7 @@ const MainPage = ()=>{
                 {sortedClubs.map((club, index) => (
                 <div
                     key={club.id}
-                    onClick={() => navigate(`/club/${club.id}`)}
+                    onClick={() => navigate(`/main/club/${club.id}`)}
                 >
                      <ClubNameBox
                         name={club.name}

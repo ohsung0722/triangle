@@ -32,6 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
   font-weight: bold;
   color: rgb(44, 107, 255);
   border-bottom: 3px solid rgb(44, 107, 255);
@@ -39,6 +40,7 @@
 }
 
 .ClubInfo_TextStart {
+  font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -54,9 +56,24 @@
   width: 100%;
 }
 
-.ClubInfo_TextDetail {
-  margin-left: 1em;
-  font-weight: bold;
-  font-size: 0.8em;
+.ClubInfo_DescriptionList {
+  margin-left: 0.9em;
   color: gray;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.ClubInfo_DescriptionTitle {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.ClubInfo_DescriptionParagraph {
+  margin-left: 1.2em;
+}
+
+.ClubInfo_Bottom {
+  margin-bottom: 80px;
 }
