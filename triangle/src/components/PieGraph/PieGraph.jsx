@@ -7,13 +7,13 @@ const PieGraph = ({ data}) => {
 
   const colorScale = useMemo(() => {
     const colors = {
-        봉사분과 : '#FFC8A2',
-        종교분과 : '#FFD1DC',
-        문화분과 : '#C9C9FF',
-        체육분과 : '#D2F6C5',
-        공연분과 : '#FFFFB3',
-        학술분과 : '#C2F6FF'
-    };
+    봉사분과: "#81c784",
+    종교분과: "#ffb74d",
+    문화분과: "#ba68c8",
+    체육분과: "#ED1C24",
+    공연분과: "#f06292",
+    학술분과: "#64b5f6",
+  };
     const domain = data.map(d => d.category);
     let range;
 
@@ -44,6 +44,7 @@ const PieGraph = ({ data}) => {
     tooltip.style('opacity', 0);
 
     const pieGenerator = d3.pie()
+      .padAngle(0.02)
       .value(d => d.count)
       .sort(null);
       
@@ -98,8 +99,8 @@ const PieGraph = ({ data}) => {
         .attr('text-anchor', 'middle')
         .attr('dy', '0.35em')
         .text(d => d.data.count)
-        .style('font-size', '12px')
-        .style('fill', '#333');
+        .style('font-size', '20px')
+        .style('fill', '#ffffff')
   }, [data, colorScale]);
 
   return (

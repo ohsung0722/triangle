@@ -5,8 +5,10 @@ import { TestPage } from "./pages/TestPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { DescriptionChatBotPage } from "./pages/DescriptionChatBotPage/DescriptionChatBotPage";
 import { DescriptionLayout } from "./layouts/DescriptionLayout/DescriptionLayout";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import MainPage from "./pages/MainPage/MainPage";
 import { ClubInfo } from "./pages/ClubInfo/ClubInfo";
+import GraphPage from "./pages/GraphPage/GraphPage";
 
 const router = createBrowserRouter([
     {
@@ -15,8 +17,8 @@ const router = createBrowserRouter([
         children: [
             {index: true, element: <MainPage/>},
             {path: '*', element: <NotFoundPage/>},
-            {path: 'club/:id', element: <ClubInfo/> },    
-            {path: 'graph', element: <TestPage />}     
+            {path: 'club/:id', element: <ClubInfo/> },
+            {path: 'graph', element: <GraphPage/> },
         ]
     },
     {
