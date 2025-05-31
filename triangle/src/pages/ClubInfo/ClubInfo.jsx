@@ -43,14 +43,32 @@ const ClubInfo = () => {
         <div className="ClubInfo_section3">
           <div className="ClubInfo_clubIntro">동아리 소개</div>
           <div className="ClubInfo_TextSection">
-            <div className="ClubInfo_TextStart">동아리를 소개합니다.</div>
+            <div className="ClubInfo_TextStart">동아리 소개 - 이미지</div>
             <div className="ClubInfo_clubImage">
               <img
                 src={clubImage}
                 alt="동아리사진"
             />
             </div>
-            <div className="ClubInfo_TextDetail">{club.detail.description}</div>
+            <ul className="ClubInfo_DescriptionList">
+              {club.detail.description.map((paragraph, index) => {
+              const isTitle = index % 2 === 0;
+              const content = paragraph.split('\n');
+
+              return (
+                <li key={index} className={isTitle ? "ClubInfo_DescriptionTitle" : "ClubInfo_DescriptionParagraph"}>
+                  {isTitle ? (
+                  <span>{paragraph}</span>
+                  ) : (
+                  content.map((line, i) => (
+                  <span key={i} style={{ display: 'block' }}>{line}</span>
+                  ))
+                  )}
+                </li>
+              );
+            })}
+            </ul>
+            <div className="ClubInfo_Bottom"></div>
           </div>
         </div>
       </div>
