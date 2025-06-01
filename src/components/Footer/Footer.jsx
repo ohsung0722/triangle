@@ -33,7 +33,7 @@ function Footer() {
                             랜딩 페이지
                         </a>
                         <a href="/main/graph" className="footer-link">
-                            동아리 그래프
+                            대시보드
                         </a>
                         <a href="#" className="footer-link" onClick={handleDeveloperLinkClick}>
                             개발팀
