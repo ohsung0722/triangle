@@ -113,7 +113,7 @@ CRA(Create React App) 기반으로 개발 서버가 실행되며, 기본적으�
 ## 📁 프로젝트 구조
 |프로젝트 구조 이미지|
 |:--:|
-|![alt text](image.png)|
+|![alt text](/src/assets/images/image.png)|
 |세모 프로젝트의 구성 폴더 이미지입니다.|
 
 ### 화면 구성
