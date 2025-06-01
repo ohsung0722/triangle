@@ -1,9 +1,11 @@
+// Dialog 컴포넌트 - 개발팀 소개를 보여주는 모달 다이얼로그 컴포넌트
 import React from 'react';
 import './Dialog.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Code, Zap, Database } from 'lucide-react';
 import {ReactComponent as Github} from '../../assets/images/github-mark.svg'
 
+// 개발자 정보 배열
 const developers = [
   {
     name: "권오성",
@@ -39,13 +41,18 @@ const developers = [
   },
 ]
 
+// props 설명
+// isOpen: 다이얼로그 표시 여부
+// onClose: 다이얼로그 닫기 함수
 function Dialog({ isOpen, onClose }) {
+  // 오버레이 클릭 시 다이얼로그 닫기
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
       onClose()
     }
   }
 
+  // 역할에 따른 아이콘 반환 함수
   const getRoleIcon = (role) => {
     if (role.includes("Frontend")) return <Code size={20} />
     if (role.includes("Backend")) return <Database size={20} />
@@ -70,6 +77,7 @@ function Dialog({ isOpen, onClose }) {
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ duration: 0.3, type: "spring", damping: 25, stiffness: 300 }}
           >
+            {/* 다이얼로그 헤더 */}
             <div className="dialog-header">
               <button className="dialog-close" onClick={onClose}>
                 <X size={20} />
@@ -78,6 +86,7 @@ function Dialog({ isOpen, onClose }) {
               <p className="dialog-subtitle">세모를 개발한 7조 조원들을 소개합니다</p>
             </div>
 
+            {/* 개발자 카드 그리드 */}
             <div className="developers-grid">
               {developers.map((developer, index) => (
                 <motion.div
@@ -87,12 +96,16 @@ function Dialog({ isOpen, onClose }) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                 >
+                  {/* 개발자 아바타 */}
                   <div className="developer-avatar">{developer.avatar}</div>
+                  {/* 개발자 이름 */}
                   <div className="developer-name">{developer.name}</div>
+                  {/* 개발자 역할 */}
                   <div className="developer-role">
                     <span style={{ marginRight: "0.5rem" }}>{getRoleIcon(developer.role)}</span>
                     {developer.role}
                   </div>
+                  {/* 개발자 스킬 태그 */}
                   <div className="developer-skills">
                     {developer.skills.map((skill) => (
                       <span key={skill} className="skill-tag">
@@ -100,6 +113,7 @@ function Dialog({ isOpen, onClose }) {
                       </span>
                     ))}
                   </div>
+                  {/* GitHub 링크 */}
                   <a href={developer.github} target="_blank" rel="noopener noreferrer" className="github-link">
                     <Github className="github-icon" />
                     GitHub 프로필
@@ -107,8 +121,6 @@ function Dialog({ isOpen, onClose }) {
                 </motion.div>
               ))}
             </div>
-
-            
           </motion.div>
         </motion.div>
       )}

@@ -1,15 +1,18 @@
+// LandingPage - 웹사이트의 첫 화면을 보여주는 랜딩 페이지 컴포넌트
 import React, { useState } from 'react';
 import Dialog from '../../components/Dialog/Dialog';
 import Button from '../../components/Button/Button';
 import './LandingPage.css';
 
 const LandingPage = () => {
+  // 다이얼로그 상태 관리
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [dialogContent, setDialogContent] = useState({
     title: '',
     content: ''
   });
 
+  // 기능 버튼 클릭 핸들러
   const handleFeatureClick = (feature) => {
     const content = {
       'About': {
@@ -39,42 +42,45 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
+      {/* 페이지 헤더 */}
       <header className="landing-header">
         <h1>세모에 오신 것을 환영합니다</h1>
         <p className="subtitle">당신에게 적합한 동아리를 찾아보세요</p>
       </header>
 
+      {/* 메인 콘텐츠 */}
       <main className="landing-content">
+        {/* 주요 기능 소개 섹션 */}
         <section className="landing-features-section">
           <h2>Our Features</h2>
           <div className="landing-features-grid">
+            {/* 챗봇 기능 카드 */}
             <div className="landing-feature-card">
               <h3>챗 봇</h3>
               <p>무엇이든 물어보세요</p>
               <Button 
                 variant="secondary"
                 to="/chatbot"
-                // onClick={() => handleFeatureClick('챗 봇')}
               >
                 Learn More
               </Button>
             </div>
+            {/* 검색 기능 카드 */}
             <div className="landing-feature-card">
               <h3>검색 창</h3>
               <p>원하는 동아리를 바로 확인할 수 있어요</p>
               <Button 
                 variant="secondary"
-                // onClick={() => handleFeatureClick('검색 창')}
               >
                 Learn More
               </Button>
             </div>
+            {/* 즐겨찾기 기능 카드 */}
             <div className="landing-feature-card">
               <h3>즐겨찾기</h3>
               <p>원하는 동아리를 손쉽게 추가할 수 있어요</p>
               <Button 
                 variant="secondary"
-                // onClick={() => handleFeatureClick('즐겨찾기')}
               >
                 Learn More
               </Button>
@@ -82,6 +88,7 @@ const LandingPage = () => {
           </div>
         </section>
 
+        {/* CTA(Call-to-Action) 섹션 */}
         <section className="landing-cta-section">
           <h2>지금 바로 시작하세요</h2>
           <p>당신에게 적합한 동아리를 찾아보세요</p>
@@ -95,8 +102,10 @@ const LandingPage = () => {
         </section>
       </main>
 
+      {/* 푸터 섹션 */}
       <footer className="landing-footer">
         <div className="landing-footer-content">
+          {/* About Us 섹션 */}
           <div className="landing-footer-section">
             <h4>About Us</h4>
             <Button 
@@ -106,6 +115,7 @@ const LandingPage = () => {
               About US
             </Button>
           </div>
+          {/* Contact 섹션 */}
           <div className="landing-footer-section">
             <h4>Contact</h4>
             <Button 
@@ -115,6 +125,7 @@ const LandingPage = () => {
               Github Page
             </Button>
           </div>
+          {/* Resources 섹션 */}
           <div className="landing-footer-section">
             <h4>Resources</h4>
             <Button 
