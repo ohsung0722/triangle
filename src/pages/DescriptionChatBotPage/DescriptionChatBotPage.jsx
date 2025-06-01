@@ -16,10 +16,11 @@ import {
 } from "lucide-react";
 import { TestimonialCard } from "../../components/TestimonialCard/TestimonialCard";
 import chatbotImage from "../../assets/images/chatbot_image.png";
+import graphImage from '../../assets/images/graph.png'
 import { useNavigate } from 'react-router-dom';
 import { FavoriteSection } from "../../components/FavoriteSection/FavoriteSection";
-import { Dialog } from "../../components/Dialog/Dialog";
 
+//랜딩페이지
 function DescriptionChatBotPage() {
   // 스크롤 애니메이션을 위한 ref와 설정
   const targetRef = useRef(null);
@@ -204,7 +205,7 @@ function DescriptionChatBotPage() {
             transition={{ duration: 0.6 }}
           >
             <motion.img
-              src={chatbotImage}
+              src={graphImage}
               alt="그래프 캡처 이미지"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

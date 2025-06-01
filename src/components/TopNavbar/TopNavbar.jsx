@@ -22,7 +22,7 @@ const TopNavbar = () =>{
                     />
                 </div>
                 {/* 대시보드 버튼 - 클릭 시 그래프 페이지로 이동 */}
-                <div className="TopNavBar_Button" onClick={() => navigate('/graph')}>
+                <div className="TopNavBar_Button" onClick={() => navigate('/main/graph')}>
                     대시보드
                     <img
                         src={graphIcon}
