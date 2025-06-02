@@ -85,6 +85,8 @@ npm -v
 
 >Homebrew가 설치되어 있지 않다면 [공식 홈페이지](https://brew.sh/ko/)에서 설치 안내를 참고하세요
 
+</br></br>
+
 ## 프로젝트 설치 및 실행 방법
 아래 단계는 프로젝트의 루트 디렉터리를 기준으로 진행됩니다.</br>
 Node.js 및 npm이 정상적으로 설치되어 있는지 먼저 확인하세요.
@@ -102,7 +104,10 @@ npm install
 필요한 라이브러리 및 모듈이 자동으로 설치됩니다.
 
 3️⃣ env 설정 </br>
+
 .gitignore과 같은 위치에 env 파일을 생성 후 api key를 입력해야합니다. (key는 조교에게 직접 전달)
+
+</br>
 
 4️⃣ 개발 서버 실행
 ```bash
@@ -112,7 +117,7 @@ CRA(Create React App) 기반으로 개발 서버가 실행되며, 기본적으�
 
 5️⃣ 브라우저에서 바로 접근하기 </br></br>
 [세모 홈페이지 바로가기](도메인) </br>
-위 도메인에 접속하여 **세모** 홈페이지로 접속이 가능합니다.
+위 도메인에 접속하여 **세모** 홈페이지로 접속이 가능합니다.(배포 후 추가)
 
 ## 📁 프로젝트 구조
 |프로젝트 구조 이미지|
@@ -165,30 +170,37 @@ CRA(Create React App) 기반으로 개발 서버가 실행되며, 기본적으�
 ### 화면 구성
 
 #### 랜딩 페이지 흐름 영상
-(영상 들어갈 자리)
+https://github.com/user-attachments/assets/13b3599d-1b33-411e-8316-ada79b1aace1
+
 '세모' 서비스의 전체적인 기능을 한눈에 확인할 수 있는 랜딩페이지 입니다.</br>
 '세모'의 대표 기능인 챗봇, 대시보드, 즐겨찾기 기능을 확인할 수 있습니다.
+</br></br>
 
 |메인 페이지|
 |:---:|
-|![image](https://github.com/user-attachments/assets/eed9fd9f-795b-4211-aae5-21344ed241e0)|
+|<img width="1495" alt="image" src="https://github.com/user-attachments/assets/a5d7c94b-1ec4-4b0f-b7d9-7d1f91d32217" />|
 |'세모'의 메인 페이지로 분과, 세부 카테고리를 기준으로 교내 동아리를 간편하게 확인할 수 있습니다.|
 
 
 |동아리 상세 페이지|
 |:---:|
-|![image](https://github.com/user-attachments/assets/25c19d44-2c1b-492a-8fb7-06efd2793d44)|
+|<img width="1503" alt="image" src="https://github.com/user-attachments/assets/3f96e9b6-3dd9-4a99-9add-17eec1e29375" />|
 |각 동아리의 상세 소개 페이지로 동아리 이미지, 자세한 소개글 등 세부 정보를 확인할 수 있습니다.|
 
 |즐겨찾기|
 |:---:|
-||
+|<img width="1193" alt="image" src="https://github.com/user-attachments/assets/17c51163-6f07-4452-a4a3-dfc1c5b243aa" />|
 |즐겨찾기 한 동아리를 필터를 통해 한눈에 확인할 수 있습니다.|
 
 |대시보드|
 |:---:|
-||
+|<img width="1504" alt="image" src="https://github.com/user-attachments/assets/11c65d63-ca9b-4bf2-9b12-b7953af9d474" />|
 |대시보드를 통해 세종대 동아리 현황과 즐겨찾기 동아리 현황을 확인할 수 있습니다.|
+
+|챗봇|
+|:---:|
+|<img width="341" alt="image" src="https://github.com/user-attachments/assets/e88eb4dc-0126-403c-b7a8-9dc9d72a0b03" />|
+|챗봇을 활용해 세종대 동아리와 관련된 정보를 얻을 수 있습니다.|
 
 <br />
 <br />
@@ -234,6 +246,12 @@ hotfix/*     ← 긴급 수정 사항 처리
 - 주요 목표 설정 및 회의록 정리
 - 역할 분담 후 각자 GitHub Issue 생성</br>
 
+|디스코드 회의 캡처 화면|
+|:---:|
+|![image](https://github.com/user-attachments/assets/130e9842-107f-41e6-a69e-090b4fa87c38)|
+|매주 정기적 회의 및 건의,논의 사항이 있을 때마다 디스코드 툴 적극 활용|
+
+
 **📌 작업 방식**
 1. GitHub Issue 생성 → Assignee & Label 지정
 2. 기능 개발 → feature/ 브랜치에서 작업
@@ -257,12 +275,24 @@ hotfix/*     ← 긴급 수정 사항 처리
 ### **🧩 템플릿 및 프로젝트 활용**
 
 - **이슈 템플릿**
-    
-    일관된 Issue 등록을 위한 작성 형식 제공
+
+|이슈 템플릿 활용|
+|:---:|
+|<img width="712" alt="image" src="https://github.com/user-attachments/assets/fe1260a9-4f61-461d-8186-6ba013083b86" />|
+|<img width="1231" alt="image" src="https://github.com/user-attachments/assets/728caa97-2865-4260-aac9-fd6a2c3942ac" />|
+|<img width="1124" alt="image" src="https://github.com/user-attachments/assets/4f7c2e76-5f62-405b-9f82-19dd909bcaed" />|
+|일관된 Issue 등록을 위한 작성 형식 제공 [실제 이슈 64번 링크](https://github.com/SejongOSS/triangle/issues/64)|
     
 - **PR 템플릿**
+
+|PR 템플릿 활용|
+|:---:|
+|<img width="1007" alt="image" src="https://github.com/user-attachments/assets/98c60818-30f1-4b9c-b7df-1e6717cf78ba" />|
+|<img width="1193" alt="image" src="https://github.com/user-attachments/assets/1acc4f73-da42-423b-8df2-ad1e30a20e28" />|
+|<img width="894" alt="image" src="https://github.com/user-attachments/assets/baa66aac-6501-42dd-b56c-09750c66cc08" />|
+|PR 템플릿 작성 형식을 제공하고, merge 시 충돌 혹은 버그에 대한 코드리뷰 작성 및 resolve[실제 이슈 64번에 대한 PR 링크](https://github.com/SejongOSS/triangle/pull/66)|
     
-    변경사항, 리뷰 요청 항목을 명확하게 표기
+    
     
 - **Project Board**
     
@@ -270,9 +300,15 @@ hotfix/*     ← 긴급 수정 사항 처리
     
     → No Status, To do, In Progress, Review, Done 으로 분류
 
+  <img width="1508" alt="image" src="https://github.com/user-attachments/assets/742f0cc4-c7f6-4d12-a69d-546b39f8be09" />
+
+
 - **Milestone**
 
-    프로젝트 목표 과제 정리 및 마감 기한 표시를 위한 milestone 설정
+    프로젝트 목표 과제 정리 및 마감 기한 표시를 위한 milestone 설정 (총 2번의 milestone 설정)
+
+  <img width="1010" alt="image" src="https://github.com/user-attachments/assets/7d56e9a2-ec6a-4220-8ff9-e134997fb7ca" />
+
     
     
 
