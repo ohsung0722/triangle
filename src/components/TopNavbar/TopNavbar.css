@@ -1,0 +1,51 @@
+.TopNavBar_Container{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    background-color: white;
+    z-index: 1000;
+    
+}
+
+.TopNavBar_Logo_Container{
+    margin: 0 auto;
+    position: relative;
+    width: 1120px;
+    display: flex;
+    align-items: center;
+}
+
+.TopNavBar_Logo_Wrapper{
+    width: 120px; 
+    cursor: pointer;
+}
+
+.TopNavBar_Logo{
+    max-height: 80px; 
+    object-fit: contain; 
+    display: block;
+    margin-left: 10px;
+}
+
+.TopNavBar_icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.TopNavBar_Button{
+    font-family: "Pretendard-Bold", sans-serif;
+    margin-left: auto;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .6);
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.TopNavBar_Button:hover{
+    color: #3B82F6; 
+}

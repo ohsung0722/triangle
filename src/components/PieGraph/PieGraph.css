@@ -1,0 +1,40 @@
+.pie-chart-container{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pie-chart-label-container{
+    margin-top: 50px;
+}
+
+.legend-item{
+  margin-bottom: 3px;
+  font-family: "Pretendard-Semibold"; 
+}
+
+.legend-color-box{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.pie-chart {
+  max-width: 100%;
+  height: auto;
+}
+
+.pie-chart-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: 'Pretendard', sans-serif;
+  transition: opacity 0.2s ease;
+}
+

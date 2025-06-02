@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Pretendard";
+    src: url("../../assets/fonts/Pretendard-Bold.subset.woff2") format("woff2");;
+}
+
+html, body {
+    font-family: "Pretendard", sans-serif;
+}
+
+.ClubCategoryBox_container{
+    width: 100%;
+    height: 45px;
+    background-color: #F9FAFB;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.ClubCategoryBox_label{
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(0,0,0,.5);
+    border-right: 3px solid rgba(0,0,0,.1);
+    padding: 0 12px;
+}
+
+.ClubCategoryBox_label:last-child {
+    border-right: none;
+}
+
+.ClubCategoryBox_label.selected {
+    color: #3B82F6; 
+}
